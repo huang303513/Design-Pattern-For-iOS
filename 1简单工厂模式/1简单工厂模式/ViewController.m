@@ -28,6 +28,7 @@
 
 - (IBAction)calculate:(id)sender {
     id<HCDCalculate> cal;
+    
     if ([self.countTextField.text isEqualToString:@"+"]) {
         cal =[HCDCalcuteFactory createCalcute:calcuteTypeAdd];
     }else if([self.countTextField.text isEqualToString:@"-"]){
