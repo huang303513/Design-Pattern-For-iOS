@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>2A62BDD2-F1FC-4FFF-9EA1-0D28352EB952</string>
+	<string>E37839D8-7944-4609-8C54-7A10E7D5FF09</string>
 	<key>IDESourceControlProjectName</key>
-	<string>3装饰模式</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>97B4AD1D63A96A3E6D01F6FF529543E2092CC1C1</key>
 		<string>https://github.com/huang303513/Design-Pattern-For-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>3装饰模式/3装饰模式.xcodeproj</string>
+	<string>4代理模式/4代理模式.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>97B4AD1D63A96A3E6D01F6FF529543E2092CC1C1</key>
