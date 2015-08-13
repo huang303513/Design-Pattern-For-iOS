@@ -7,6 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "HCDObserver.h"
+#import "HCDNBAObserver.h"
+#import "HCDStockObserver.h"
+#import "HCDSecreteSubject.h"
+
+typedef id<HCDObserver> HCDObserver;
 
 @interface ViewController ()
 
@@ -16,7 +22,23 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    HCDSubject *subject = [[HCDSecreteSubject alloc]init];
+    
+    HCDObserver nbaobserver = [[HCDNBAObserver alloc]init];
+    [subject attach:nbaobserver];
+    
+    
+    HCDObserver stockobserver = [[HCDStockObserver alloc]init];
+    [subject attach:stockobserver];
+    
+    HCDObserver stockobserver1 = [[HCDStockObserver alloc]init];
+    [subject attach:stockobserver1];
+    
+    [subject detach:nbaobserver];
+    
+    [subject notify];
+    
 }
 
 - (void)didReceiveMemoryWarning {

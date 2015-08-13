@@ -14,6 +14,11 @@
 		DDBEA9B61B7C87BF004874A1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDBEA9B51B7C87BF004874A1 /* Images.xcassets */; };
 		DDBEA9B91B7C87BF004874A1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDBEA9B71B7C87BF004874A1 /* LaunchScreen.xib */; };
 		DDBEA9C51B7C87BF004874A1 /* ______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBEA9C41B7C87BF004874A1 /* ______Tests.m */; };
+		DDBEA9CF1B7C8C44004874A1 /* 观察者模式类图.png in Resources */ = {isa = PBXBuildFile; fileRef = DDBEA9CE1B7C8C44004874A1 /* 观察者模式类图.png */; };
+		DDBEA9D41B7C9C36004874A1 /* HCDSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBEA9D31B7C9C36004874A1 /* HCDSubject.m */; };
+		DDBEA9D81B7C9D19004874A1 /* HCDSecreteSubject.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBEA9D71B7C9D19004874A1 /* HCDSecreteSubject.m */; };
+		DDBEA9DB1B7C9EC2004874A1 /* HCDStockObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBEA9DA1B7C9EC2004874A1 /* HCDStockObserver.m */; };
+		DDBEA9DE1B7C9F18004874A1 /* HCDNBAObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = DDBEA9DD1B7C9F18004874A1 /* HCDNBAObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,16 @@
 		DDBEA9BE1B7C87BF004874A1 /* 9观察者模式Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "9观察者模式Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDBEA9C31B7C87BF004874A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDBEA9C41B7C87BF004874A1 /* ______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______Tests.m"; sourceTree = "<group>"; };
+		DDBEA9CE1B7C8C44004874A1 /* 观察者模式类图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "观察者模式类图.png"; sourceTree = "<group>"; };
+		DDBEA9D21B7C9C36004874A1 /* HCDSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSubject.h; sourceTree = "<group>"; };
+		DDBEA9D31B7C9C36004874A1 /* HCDSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDSubject.m; sourceTree = "<group>"; };
+		DDBEA9D51B7C9C79004874A1 /* HCDObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDObserver.h; sourceTree = "<group>"; };
+		DDBEA9D61B7C9D19004874A1 /* HCDSecreteSubject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSecreteSubject.h; sourceTree = "<group>"; };
+		DDBEA9D71B7C9D19004874A1 /* HCDSecreteSubject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDSecreteSubject.m; sourceTree = "<group>"; };
+		DDBEA9D91B7C9EC2004874A1 /* HCDStockObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDStockObserver.h; sourceTree = "<group>"; };
+		DDBEA9DA1B7C9EC2004874A1 /* HCDStockObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDStockObserver.m; sourceTree = "<group>"; };
+		DDBEA9DC1B7C9F18004874A1 /* HCDNBAObserver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDNBAObserver.h; sourceTree = "<group>"; };
+		DDBEA9DD1B7C9F18004874A1 /* HCDNBAObserver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDNBAObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +96,8 @@
 		DDBEA9A71B7C87BF004874A1 /* 9观察者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				DDBEA9D01B7C9BE2004874A1 /* 观察者模式 */,
+				DDBEA9CE1B7C8C44004874A1 /* 观察者模式类图.png */,
 				DDBEA9AC1B7C87BF004874A1 /* AppDelegate.h */,
 				DDBEA9AD1B7C87BF004874A1 /* AppDelegate.m */,
 				DDBEA9AF1B7C87BF004874A1 /* ViewController.h */,
@@ -117,6 +134,22 @@
 				DDBEA9C31B7C87BF004874A1 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDBEA9D01B7C9BE2004874A1 /* 观察者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DDBEA9D21B7C9C36004874A1 /* HCDSubject.h */,
+				DDBEA9D31B7C9C36004874A1 /* HCDSubject.m */,
+				DDBEA9D51B7C9C79004874A1 /* HCDObserver.h */,
+				DDBEA9D61B7C9D19004874A1 /* HCDSecreteSubject.h */,
+				DDBEA9D71B7C9D19004874A1 /* HCDSecreteSubject.m */,
+				DDBEA9D91B7C9EC2004874A1 /* HCDStockObserver.h */,
+				DDBEA9DA1B7C9EC2004874A1 /* HCDStockObserver.m */,
+				DDBEA9DC1B7C9F18004874A1 /* HCDNBAObserver.h */,
+				DDBEA9DD1B7C9F18004874A1 /* HCDNBAObserver.m */,
+			);
+			name = "观察者模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDBEA9B41B7C87BF004874A1 /* Main.storyboard in Resources */,
+				DDBEA9CF1B7C8C44004874A1 /* 观察者模式类图.png in Resources */,
 				DDBEA9B91B7C87BF004874A1 /* LaunchScreen.xib in Resources */,
 				DDBEA9B61B7C87BF004874A1 /* Images.xcassets in Resources */,
 			);
@@ -221,7 +255,11 @@
 			files = (
 				DDBEA9B11B7C87BF004874A1 /* ViewController.m in Sources */,
 				DDBEA9AE1B7C87BF004874A1 /* AppDelegate.m in Sources */,
+				DDBEA9DB1B7C9EC2004874A1 /* HCDStockObserver.m in Sources */,
+				DDBEA9DE1B7C9F18004874A1 /* HCDNBAObserver.m in Sources */,
+				DDBEA9D41B7C9C36004874A1 /* HCDSubject.m in Sources */,
 				DDBEA9AB1B7C87BF004874A1 /* main.m in Sources */,
+				DDBEA9D81B7C9D19004874A1 /* HCDSecreteSubject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
