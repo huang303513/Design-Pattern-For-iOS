@@ -10,8 +10,9 @@
 #import "HCDObserver.h"
 @interface HCDSubject : NSObject
 //这里很不合理，不知怎么办
-@property(nonatomic,readwrite,strong)NSMutableArray *observerList;
+//@property(nonatomic,readwrite,strong)NSMutableArray *observerList;
 -(void)attach:(id<HCDObserver>)observer;
 -(void)detach:(id<HCDObserver>)observer;
 -(void)notify;
+-(NSArray *)getobserverList;
 @end

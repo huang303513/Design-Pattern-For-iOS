@@ -24,18 +24,15 @@ typedef id<HCDObserver> HCDObserver;
     [super viewDidLoad];
     
     HCDSubject *subject = [[HCDSecreteSubject alloc]init];
-    
+    //添加三个通知对象
     HCDObserver nbaobserver = [[HCDNBAObserver alloc]init];
     [subject attach:nbaobserver];
-    
-    
     HCDObserver stockobserver = [[HCDStockObserver alloc]init];
     [subject attach:stockobserver];
-    
     HCDObserver stockobserver1 = [[HCDStockObserver alloc]init];
     [subject attach:stockobserver1];
-    
-    [subject detach:nbaobserver];
+    //删除一个通知对象
+    [subject detach:stockobserver];
     
     [subject notify];
     

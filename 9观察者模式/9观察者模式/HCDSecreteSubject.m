@@ -12,7 +12,7 @@
 @implementation HCDSecreteSubject
 -(void)notify{
     NSLog(@"秘书通知：老板回来了，大家赶紧撤");
-    for (id<HCDObserver> observer in self.observerList) {
+    for (id<HCDObserver> observer in [self getobserverList]) {
         [observer update];
     }
 }

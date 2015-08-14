@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DD3660641B7D8E9600549DFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660631B7D8E9600549DFD /* main.m */; };
+		DD3660671B7D8E9600549DFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660661B7D8E9600549DFD /* AppDelegate.m */; };
+		DD36606A1B7D8E9600549DFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660691B7D8E9600549DFD /* ViewController.m */; };
+		DD36606D1B7D8E9600549DFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD36606B1B7D8E9600549DFD /* Main.storyboard */; };
+		DD36606F1B7D8E9600549DFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD36606E1B7D8E9600549DFD /* Images.xcassets */; };
+		DD3660721B7D8E9600549DFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD3660701B7D8E9600549DFD /* LaunchScreen.xib */; };
+		DD36607E1B7D8E9600549DFD /* _0______Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD36607D1B7D8E9600549DFD /* _0______Tests.m */; };
+		DD36608B1B7D97BA00549DFD /* HCDSqlserverUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD36608A1B7D97BA00549DFD /* HCDSqlserverUser.m */; };
+		DD36608E1B7D97E800549DFD /* HCDAccessUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD36608D1B7D97E800549DFD /* HCDAccessUser.m */; };
+		DD3660951B7D983F00549DFD /* HCDSqlserverDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660941B7D983F00549DFD /* HCDSqlserverDepartment.m */; };
+		DD3660981B7D986A00549DFD /* HCDAccessDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660971B7D986A00549DFD /* HCDAccessDepartment.m */; };
+		DD36609D1B7D98FB00549DFD /* HCDSqlserverFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD36609C1B7D98FB00549DFD /* HCDSqlserverFactory.m */; };
+		DD3660A01B7D996800549DFD /* HCDAccessFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DD36609F1B7D996800549DFD /* HCDAccessFactory.m */; };
+		DD3660A31B7D9C0000549DFD /* SQLUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660A21B7D9C0000549DFD /* SQLUser.m */; };
+		DD3660A61B7D9CD300549DFD /* SQLDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3660A51B7D9CD300549DFD /* SQLDepartment.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DD3660781B7D8E9600549DFD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DD3660561B7D8E9600549DFD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD36605D1B7D8E9600549DFD;
+			remoteInfo = "10抽象工厂模式";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DD36605E1B7D8E9600549DFD /* 10抽象工厂模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "10抽象工厂模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3660621B7D8E9600549DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD3660631B7D8E9600549DFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DD3660651B7D8E9600549DFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DD3660661B7D8E9600549DFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DD3660681B7D8E9600549DFD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DD3660691B7D8E9600549DFD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DD36606C1B7D8E9600549DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DD36606E1B7D8E9600549DFD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DD3660711B7D8E9600549DFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		DD3660771B7D8E9600549DFD /* 10抽象工厂模式Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "10抽象工厂模式Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD36607C1B7D8E9600549DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD36607D1B7D8E9600549DFD /* _0______Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_0______Tests.m"; sourceTree = "<group>"; };
+		DD3660881B7D977500549DFD /* HCDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDUser.h; sourceTree = "<group>"; };
+		DD3660891B7D97BA00549DFD /* HCDSqlserverUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSqlserverUser.h; sourceTree = "<group>"; };
+		DD36608A1B7D97BA00549DFD /* HCDSqlserverUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDSqlserverUser.m; sourceTree = "<group>"; };
+		DD36608C1B7D97E800549DFD /* HCDAccessUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDAccessUser.h; sourceTree = "<group>"; };
+		DD36608D1B7D97E800549DFD /* HCDAccessUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDAccessUser.m; sourceTree = "<group>"; };
+		DD3660921B7D982600549DFD /* HCDDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDDepartment.h; sourceTree = "<group>"; };
+		DD3660931B7D983F00549DFD /* HCDSqlserverDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSqlserverDepartment.h; sourceTree = "<group>"; };
+		DD3660941B7D983F00549DFD /* HCDSqlserverDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDSqlserverDepartment.m; sourceTree = "<group>"; };
+		DD3660961B7D986A00549DFD /* HCDAccessDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDAccessDepartment.h; sourceTree = "<group>"; };
+		DD3660971B7D986A00549DFD /* HCDAccessDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDAccessDepartment.m; sourceTree = "<group>"; };
+		DD36609A1B7D98E800549DFD /* HCDFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDFactory.h; sourceTree = "<group>"; };
+		DD36609B1B7D98FB00549DFD /* HCDSqlserverFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSqlserverFactory.h; sourceTree = "<group>"; };
+		DD36609C1B7D98FB00549DFD /* HCDSqlserverFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDSqlserverFactory.m; sourceTree = "<group>"; };
+		DD36609E1B7D996800549DFD /* HCDAccessFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDAccessFactory.h; sourceTree = "<group>"; };
+		DD36609F1B7D996800549DFD /* HCDAccessFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDAccessFactory.m; sourceTree = "<group>"; };
+		DD3660A11B7D9C0000549DFD /* SQLUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLUser.h; sourceTree = "<group>"; };
+		DD3660A21B7D9C0000549DFD /* SQLUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLUser.m; sourceTree = "<group>"; };
+		DD3660A41B7D9CD300549DFD /* SQLDepartment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLDepartment.h; sourceTree = "<group>"; };
+		DD3660A51B7D9CD300549DFD /* SQLDepartment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLDepartment.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DD36605B1B7D8E9600549DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3660741B7D8E9600549DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DD3660551B7D8E9600549DFD = {
+			isa = PBXGroup;
+			children = (
+				DD3660601B7D8E9600549DFD /* 10抽象工厂模式 */,
+				DD36607A1B7D8E9600549DFD /* 10抽象工厂模式Tests */,
+				DD36605F1B7D8E9600549DFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DD36605F1B7D8E9600549DFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DD36605E1B7D8E9600549DFD /* 10抽象工厂模式.app */,
+				DD3660771B7D8E9600549DFD /* 10抽象工厂模式Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DD3660601B7D8E9600549DFD /* 10抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DD3660871B7D973600549DFD /* 抽象工厂模式 */,
+				DD3660651B7D8E9600549DFD /* AppDelegate.h */,
+				DD3660661B7D8E9600549DFD /* AppDelegate.m */,
+				DD3660681B7D8E9600549DFD /* ViewController.h */,
+				DD3660691B7D8E9600549DFD /* ViewController.m */,
+				DD36606B1B7D8E9600549DFD /* Main.storyboard */,
+				DD36606E1B7D8E9600549DFD /* Images.xcassets */,
+				DD3660701B7D8E9600549DFD /* LaunchScreen.xib */,
+				DD3660611B7D8E9600549DFD /* Supporting Files */,
+			);
+			path = "10抽象工厂模式";
+			sourceTree = "<group>";
+		};
+		DD3660611B7D8E9600549DFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD3660621B7D8E9600549DFD /* Info.plist */,
+				DD3660631B7D8E9600549DFD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD36607A1B7D8E9600549DFD /* 10抽象工厂模式Tests */ = {
+			isa = PBXGroup;
+			children = (
+				DD36607D1B7D8E9600549DFD /* _0______Tests.m */,
+				DD36607B1B7D8E9600549DFD /* Supporting Files */,
+			);
+			path = "10抽象工厂模式Tests";
+			sourceTree = "<group>";
+		};
+		DD36607B1B7D8E9600549DFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DD36607C1B7D8E9600549DFD /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD3660871B7D973600549DFD /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DD3660AA1B7DA1AB00549DFD /* 具体要操作的对象 */,
+				DD3660A91B7D9D4300549DFD /* 工厂方法 */,
+				DD3660A81B7D9D2B00549DFD /* 操作SQLDepartment对象 */,
+				DD3660A71B7D9CEA00549DFD /* 操作SQLUser对象 */,
+			);
+			name = "抽象工厂模式";
+			sourceTree = "<group>";
+		};
+		DD3660A71B7D9CEA00549DFD /* 操作SQLUser对象 */ = {
+			isa = PBXGroup;
+			children = (
+				DD3660881B7D977500549DFD /* HCDUser.h */,
+				DD3660891B7D97BA00549DFD /* HCDSqlserverUser.h */,
+				DD36608A1B7D97BA00549DFD /* HCDSqlserverUser.m */,
+				DD36608C1B7D97E800549DFD /* HCDAccessUser.h */,
+				DD36608D1B7D97E800549DFD /* HCDAccessUser.m */,
+			);
+			name = "操作SQLUser对象";
+			sourceTree = "<group>";
+		};
+		DD3660A81B7D9D2B00549DFD /* 操作SQLDepartment对象 */ = {
+			isa = PBXGroup;
+			children = (
+				DD3660921B7D982600549DFD /* HCDDepartment.h */,
+				DD3660931B7D983F00549DFD /* HCDSqlserverDepartment.h */,
+				DD3660941B7D983F00549DFD /* HCDSqlserverDepartment.m */,
+				DD3660961B7D986A00549DFD /* HCDAccessDepartment.h */,
+				DD3660971B7D986A00549DFD /* HCDAccessDepartment.m */,
+			);
+			name = "操作SQLDepartment对象";
+			sourceTree = "<group>";
+		};
+		DD3660A91B7D9D4300549DFD /* 工厂方法 */ = {
+			isa = PBXGroup;
+			children = (
+				DD36609A1B7D98E800549DFD /* HCDFactory.h */,
+				DD36609B1B7D98FB00549DFD /* HCDSqlserverFactory.h */,
+				DD36609C1B7D98FB00549DFD /* HCDSqlserverFactory.m */,
+				DD36609E1B7D996800549DFD /* HCDAccessFactory.h */,
+				DD36609F1B7D996800549DFD /* HCDAccessFactory.m */,
+			);
+			name = "工厂方法";
+			sourceTree = "<group>";
+		};
+		DD3660AA1B7DA1AB00549DFD /* 具体要操作的对象 */ = {
+			isa = PBXGroup;
+			children = (
+				DD3660A11B7D9C0000549DFD /* SQLUser.h */,
+				DD3660A21B7D9C0000549DFD /* SQLUser.m */,
+				DD3660A41B7D9CD300549DFD /* SQLDepartment.h */,
+				DD3660A51B7D9CD300549DFD /* SQLDepartment.m */,
+			);
+			name = "具体要操作的对象";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DD36605D1B7D8E9600549DFD /* 10抽象工厂模式 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3660811B7D8E9600549DFD /* Build configuration list for PBXNativeTarget "10抽象工厂模式" */;
+			buildPhases = (
+				DD36605A1B7D8E9600549DFD /* Sources */,
+				DD36605B1B7D8E9600549DFD /* Frameworks */,
+				DD36605C1B7D8E9600549DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "10抽象工厂模式";
+			productName = "10抽象工厂模式";
+			productReference = DD36605E1B7D8E9600549DFD /* 10抽象工厂模式.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DD3660761B7D8E9600549DFD /* 10抽象工厂模式Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD3660841B7D8E9600549DFD /* Build configuration list for PBXNativeTarget "10抽象工厂模式Tests" */;
+			buildPhases = (
+				DD3660731B7D8E9600549DFD /* Sources */,
+				DD3660741B7D8E9600549DFD /* Frameworks */,
+				DD3660751B7D8E9600549DFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD3660791B7D8E9600549DFD /* PBXTargetDependency */,
+			);
+			name = "10抽象工厂模式Tests";
+			productName = "10抽象工厂模式Tests";
+			productReference = DD3660771B7D8E9600549DFD /* 10抽象工厂模式Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DD3660561B7D8E9600549DFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "黄成都";
+				TargetAttributes = {
+					DD36605D1B7D8E9600549DFD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					DD3660761B7D8E9600549DFD = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = DD36605D1B7D8E9600549DFD;
+					};
+				};
+			};
+			buildConfigurationList = DD3660591B7D8E9600549DFD /* Build configuration list for PBXProject "10抽象工厂模式" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DD3660551B7D8E9600549DFD;
+			productRefGroup = DD36605F1B7D8E9600549DFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DD36605D1B7D8E9600549DFD /* 10抽象工厂模式 */,
+				DD3660761B7D8E9600549DFD /* 10抽象工厂模式Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DD36605C1B7D8E9600549DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD36606D1B7D8E9600549DFD /* Main.storyboard in Resources */,
+				DD3660721B7D8E9600549DFD /* LaunchScreen.xib in Resources */,
+				DD36606F1B7D8E9600549DFD /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3660751B7D8E9600549DFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DD36605A1B7D8E9600549DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD36608E1B7D97E800549DFD /* HCDAccessUser.m in Sources */,
+				DD36609D1B7D98FB00549DFD /* HCDSqlserverFactory.m in Sources */,
+				DD3660951B7D983F00549DFD /* HCDSqlserverDepartment.m in Sources */,
+				DD36606A1B7D8E9600549DFD /* ViewController.m in Sources */,
+				DD3660671B7D8E9600549DFD /* AppDelegate.m in Sources */,
+				DD3660A31B7D9C0000549DFD /* SQLUser.m in Sources */,
+				DD3660A61B7D9CD300549DFD /* SQLDepartment.m in Sources */,
+				DD36608B1B7D97BA00549DFD /* HCDSqlserverUser.m in Sources */,
+				DD3660641B7D8E9600549DFD /* main.m in Sources */,
+				DD3660A01B7D996800549DFD /* HCDAccessFactory.m in Sources */,
+				DD3660981B7D986A00549DFD /* HCDAccessDepartment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD3660731B7D8E9600549DFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD36607E1B7D8E9600549DFD /* _0______Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DD3660791B7D8E9600549DFD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD36605D1B7D8E9600549DFD /* 10抽象工厂模式 */;
+			targetProxy = DD3660781B7D8E9600549DFD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DD36606B1B7D8E9600549DFD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD36606C1B7D8E9600549DFD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DD3660701B7D8E9600549DFD /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DD3660711B7D8E9600549DFD /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DD36607F1B7D8E9600549DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DD3660801B7D8E9600549DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DD3660821B7D8E9600549DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "10抽象工厂模式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DD3660831B7D8E9600549DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "10抽象工厂模式/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DD3660851B7D8E9600549DFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "10抽象工厂模式Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/10抽象工厂模式.app/10抽象工厂模式";
+			};
+			name = Debug;
+		};
+		DD3660861B7D8E9600549DFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "10抽象工厂模式Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/10抽象工厂模式.app/10抽象工厂模式";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DD3660591B7D8E9600549DFD /* Build configuration list for PBXProject "10抽象工厂模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD36607F1B7D8E9600549DFD /* Debug */,
+				DD3660801B7D8E9600549DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD3660811B7D8E9600549DFD /* Build configuration list for PBXNativeTarget "10抽象工厂模式" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3660821B7D8E9600549DFD /* Debug */,
+				DD3660831B7D8E9600549DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD3660841B7D8E9600549DFD /* Build configuration list for PBXNativeTarget "10抽象工厂模式Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD3660851B7D8E9600549DFD /* Debug */,
+				DD3660861B7D8E9600549DFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DD3660561B7D8E9600549DFD /* Project object */;
+}

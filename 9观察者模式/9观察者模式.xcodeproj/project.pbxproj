@@ -141,9 +141,9 @@
 			children = (
 				DDBEA9D21B7C9C36004874A1 /* HCDSubject.h */,
 				DDBEA9D31B7C9C36004874A1 /* HCDSubject.m */,
-				DDBEA9D51B7C9C79004874A1 /* HCDObserver.h */,
 				DDBEA9D61B7C9D19004874A1 /* HCDSecreteSubject.h */,
 				DDBEA9D71B7C9D19004874A1 /* HCDSecreteSubject.m */,
+				DDBEA9D51B7C9C79004874A1 /* HCDObserver.h */,
 				DDBEA9D91B7C9EC2004874A1 /* HCDStockObserver.h */,
 				DDBEA9DA1B7C9EC2004874A1 /* HCDStockObserver.m */,
 				DDBEA9DC1B7C9F18004874A1 /* HCDNBAObserver.h */,
@@ -454,6 +454,7 @@
 				DDBEA9CA1B7C87BF004874A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DDBEA9CB1B7C87BF004874A1 /* Build configuration list for PBXNativeTarget "9观察者模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -462,6 +463,7 @@
 				DDBEA9CD1B7C87BF004874A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
