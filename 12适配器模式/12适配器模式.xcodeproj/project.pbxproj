@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DB85B121B7E14DE007D5B1E /* HCDPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB85B111B7E14DE007D5B1E /* HCDPlayer.m */; };
+		4DB85B151B7E1595007D5B1E /* HCDForwards.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB85B141B7E1595007D5B1E /* HCDForwards.m */; };
+		4DB85B181B7E1614007D5B1E /* HCDTranslator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB85B171B7E1614007D5B1E /* HCDTranslator.m */; };
+		4DB85B1B1B7E2A07007D5B1E /* HCDForeignCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB85B1A1B7E2A07007D5B1E /* HCDForeignCenter.m */; };
 		DD3661051B7DCCAC00549DFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3661041B7DCCAC00549DFD /* main.m */; };
 		DD3661081B7DCCAC00549DFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD3661071B7DCCAC00549DFD /* AppDelegate.m */; };
 		DD36610B1B7DCCAC00549DFD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD36610A1B7DCCAC00549DFD /* ViewController.m */; };
@@ -27,6 +31,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4DB85B101B7E14DE007D5B1E /* HCDPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDPlayer.h; sourceTree = "<group>"; };
+		4DB85B111B7E14DE007D5B1E /* HCDPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDPlayer.m; sourceTree = "<group>"; };
+		4DB85B131B7E1595007D5B1E /* HCDForwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDForwards.h; sourceTree = "<group>"; };
+		4DB85B141B7E1595007D5B1E /* HCDForwards.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDForwards.m; sourceTree = "<group>"; };
+		4DB85B161B7E1614007D5B1E /* HCDTranslator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDTranslator.h; sourceTree = "<group>"; };
+		4DB85B171B7E1614007D5B1E /* HCDTranslator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDTranslator.m; sourceTree = "<group>"; };
+		4DB85B191B7E2A07007D5B1E /* HCDForeignCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDForeignCenter.h; sourceTree = "<group>"; };
+		4DB85B1A1B7E2A07007D5B1E /* HCDForeignCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDForeignCenter.m; sourceTree = "<group>"; };
 		DD3660FF1B7DCCAC00549DFD /* 12适配器模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "12适配器模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD3661031B7DCCAC00549DFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3661041B7DCCAC00549DFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +72,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4DB85B0F1B7E1418007D5B1E /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				4DB85B101B7E14DE007D5B1E /* HCDPlayer.h */,
+				4DB85B111B7E14DE007D5B1E /* HCDPlayer.m */,
+				4DB85B131B7E1595007D5B1E /* HCDForwards.h */,
+				4DB85B141B7E1595007D5B1E /* HCDForwards.m */,
+				4DB85B161B7E1614007D5B1E /* HCDTranslator.h */,
+				4DB85B171B7E1614007D5B1E /* HCDTranslator.m */,
+				4DB85B191B7E2A07007D5B1E /* HCDForeignCenter.h */,
+				4DB85B1A1B7E2A07007D5B1E /* HCDForeignCenter.m */,
+			);
+			name = "适配器模式";
+			sourceTree = "<group>";
+		};
 		DD3660F61B7DCCAC00549DFD = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +108,7 @@
 		DD3661011B7DCCAC00549DFD /* 12适配器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4DB85B0F1B7E1418007D5B1E /* 适配器模式 */,
 				DD3661061B7DCCAC00549DFD /* AppDelegate.h */,
 				DD3661071B7DCCAC00549DFD /* AppDelegate.m */,
 				DD3661091B7DCCAC00549DFD /* ViewController.h */,
@@ -221,7 +249,11 @@
 			files = (
 				DD36610B1B7DCCAC00549DFD /* ViewController.m in Sources */,
 				DD3661081B7DCCAC00549DFD /* AppDelegate.m in Sources */,
+				4DB85B121B7E14DE007D5B1E /* HCDPlayer.m in Sources */,
+				4DB85B151B7E1595007D5B1E /* HCDForwards.m in Sources */,
+				4DB85B1B1B7E2A07007D5B1E /* HCDForeignCenter.m in Sources */,
 				DD3661051B7DCCAC00549DFD /* main.m in Sources */,
+				4DB85B181B7E1614007D5B1E /* HCDTranslator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +448,7 @@
 				DD3661241B7DCCAC00549DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD3661251B7DCCAC00549DFD /* Build configuration list for PBXNativeTarget "12适配器模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				DD3661271B7DCCAC00549DFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "HCDPlayer.h"
+#import "HCDForwards.h"
+#import "HCDForeignCenter.h"
+#import "HCDTranslator.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +19,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    HCDPlayer *forward = [[HCDForwards alloc]initWithName:@"maidi"];
+    [forward attack];
+    [forward defense];
+    HCDPlayer *foreignCenter = [[HCDTranslator alloc]initWithName:@"姚明"];
+    [foreignCenter attack];
+    [foreignCenter defense];
+    
 }
 
 - (void)didReceiveMemoryWarning {
