@@ -14,6 +14,13 @@
 		DD2D68A71B7ED92400F9E848 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D68A61B7ED92400F9E848 /* Images.xcassets */; };
 		DD2D68AA1B7ED92400F9E848 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2D68A81B7ED92400F9E848 /* LaunchScreen.xib */; };
 		DD2D68B61B7ED92400F9E848 /* _7____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68B51B7ED92400F9E848 /* _7____Tests.m */; };
+		DD2D68C41B7F008B00F9E848 /* 桥接模式.png in Resources */ = {isa = PBXBuildFile; fileRef = DD2D68C31B7F008B00F9E848 /* 桥接模式.png */; };
+		DD2D68C81B7F025700F9E848 /* HCDPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68C71B7F025700F9E848 /* HCDPhone.m */; };
+		DD2D68CB1B7F026C00F9E848 /* HCDNokiaPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68CA1B7F026C00F9E848 /* HCDNokiaPhone.m */; };
+		DD2D68CE1B7F02B200F9E848 /* HCDSonyPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68CD1B7F02B200F9E848 /* HCDSonyPhone.m */; };
+		DD2D68D21B7F02F300F9E848 /* HCDGameSoftware.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68D11B7F02F300F9E848 /* HCDGameSoftware.m */; };
+		DD2D68D51B7F030700F9E848 /* HCDAddressListSofeware.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68D41B7F030700F9E848 /* HCDAddressListSofeware.m */; };
+		DD2D68D81B7F057400F9E848 /* HCDGameNokiaSoftware.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68D71B7F057400F9E848 /* HCDGameNokiaSoftware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +47,20 @@
 		DD2D68AF1B7ED92400F9E848 /* 17桥接模式Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "17桥接模式Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D68B41B7ED92400F9E848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2D68B51B7ED92400F9E848 /* _7____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_7____Tests.m"; sourceTree = "<group>"; };
+		DD2D68C31B7F008B00F9E848 /* 桥接模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "桥接模式.png"; sourceTree = "<group>"; };
+		DD2D68C61B7F025700F9E848 /* HCDPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDPhone.h; sourceTree = "<group>"; };
+		DD2D68C71B7F025700F9E848 /* HCDPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDPhone.m; sourceTree = "<group>"; };
+		DD2D68C91B7F026C00F9E848 /* HCDNokiaPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDNokiaPhone.h; sourceTree = "<group>"; };
+		DD2D68CA1B7F026C00F9E848 /* HCDNokiaPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDNokiaPhone.m; sourceTree = "<group>"; };
+		DD2D68CC1B7F02B200F9E848 /* HCDSonyPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSonyPhone.h; sourceTree = "<group>"; };
+		DD2D68CD1B7F02B200F9E848 /* HCDSonyPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDSonyPhone.m; sourceTree = "<group>"; };
+		DD2D68CF1B7F02D700F9E848 /* HCDSoftware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDSoftware.h; sourceTree = "<group>"; };
+		DD2D68D01B7F02F300F9E848 /* HCDGameSoftware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDGameSoftware.h; sourceTree = "<group>"; };
+		DD2D68D11B7F02F300F9E848 /* HCDGameSoftware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDGameSoftware.m; sourceTree = "<group>"; };
+		DD2D68D31B7F030700F9E848 /* HCDAddressListSofeware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDAddressListSofeware.h; sourceTree = "<group>"; };
+		DD2D68D41B7F030700F9E848 /* HCDAddressListSofeware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDAddressListSofeware.m; sourceTree = "<group>"; };
+		DD2D68D61B7F057400F9E848 /* HCDGameNokiaSoftware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDGameNokiaSoftware.h; sourceTree = "<group>"; };
+		DD2D68D71B7F057400F9E848 /* HCDGameNokiaSoftware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDGameNokiaSoftware.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +102,7 @@
 		DD2D68981B7ED92400F9E848 /* 17桥接模式 */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D68C21B7EFB4A00F9E848 /* 桥接模式 */,
 				DD2D689D1B7ED92400F9E848 /* AppDelegate.h */,
 				DD2D689E1B7ED92400F9E848 /* AppDelegate.m */,
 				DD2D68A01B7ED92400F9E848 /* ViewController.h */,
@@ -117,6 +139,35 @@
 				DD2D68B41B7ED92400F9E848 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD2D68C21B7EFB4A00F9E848 /* 桥接模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D68C51B7F009000F9E848 /* 桥接模式 */,
+				DD2D68C31B7F008B00F9E848 /* 桥接模式.png */,
+			);
+			name = "桥接模式";
+			sourceTree = "<group>";
+		};
+		DD2D68C51B7F009000F9E848 /* 桥接模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DD2D68C61B7F025700F9E848 /* HCDPhone.h */,
+				DD2D68C71B7F025700F9E848 /* HCDPhone.m */,
+				DD2D68C91B7F026C00F9E848 /* HCDNokiaPhone.h */,
+				DD2D68CA1B7F026C00F9E848 /* HCDNokiaPhone.m */,
+				DD2D68CC1B7F02B200F9E848 /* HCDSonyPhone.h */,
+				DD2D68CD1B7F02B200F9E848 /* HCDSonyPhone.m */,
+				DD2D68CF1B7F02D700F9E848 /* HCDSoftware.h */,
+				DD2D68D01B7F02F300F9E848 /* HCDGameSoftware.h */,
+				DD2D68D11B7F02F300F9E848 /* HCDGameSoftware.m */,
+				DD2D68D31B7F030700F9E848 /* HCDAddressListSofeware.h */,
+				DD2D68D41B7F030700F9E848 /* HCDAddressListSofeware.m */,
+				DD2D68D61B7F057400F9E848 /* HCDGameNokiaSoftware.h */,
+				DD2D68D71B7F057400F9E848 /* HCDGameNokiaSoftware.m */,
+			);
+			name = "桥接模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2D68A51B7ED92400F9E848 /* Main.storyboard in Resources */,
+				DD2D68C41B7F008B00F9E848 /* 桥接模式.png in Resources */,
 				DD2D68AA1B7ED92400F9E848 /* LaunchScreen.xib in Resources */,
 				DD2D68A71B7ED92400F9E848 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +271,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2D68D51B7F030700F9E848 /* HCDAddressListSofeware.m in Sources */,
 				DD2D68A21B7ED92400F9E848 /* ViewController.m in Sources */,
 				DD2D689F1B7ED92400F9E848 /* AppDelegate.m in Sources */,
+				DD2D68CB1B7F026C00F9E848 /* HCDNokiaPhone.m in Sources */,
+				DD2D68D21B7F02F300F9E848 /* HCDGameSoftware.m in Sources */,
+				DD2D68D81B7F057400F9E848 /* HCDGameNokiaSoftware.m in Sources */,
+				DD2D68CE1B7F02B200F9E848 /* HCDSonyPhone.m in Sources */,
+				DD2D68C81B7F025700F9E848 /* HCDPhone.m in Sources */,
 				DD2D689C1B7ED92400F9E848 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +474,7 @@
 				DD2D68BB1B7ED92400F9E848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2D68BC1B7ED92400F9E848 /* Build configuration list for PBXNativeTarget "17桥接模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +483,7 @@
 				DD2D68BE1B7ED92400F9E848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

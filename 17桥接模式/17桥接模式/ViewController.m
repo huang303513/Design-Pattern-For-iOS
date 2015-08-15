@@ -7,7 +7,14 @@
 //
 
 #import "ViewController.h"
-
+#import "HCDPhone.h"
+#import "HCDNokiaPhone.h"
+#import "HCDSonyPhone.h"
+#import "HCDSoftware.h"
+#import "HCDGameSoftware.h"
+#import "HCDGameNokiaSoftware.h"
+#import "HCDAddressListSofeware.h"
+typedef id<HCDSoftware> HCDSoftware;
 @interface ViewController ()
 
 @end
@@ -16,7 +23,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    HCDPhone *phone = [[HCDNokiaPhone alloc]init];
+    HCDSoftware software = [[HCDGameNokiaSoftware alloc]init];
+    [phone setSoftWare:software];
+    [phone playSoftPhone];
+    software = [[HCDAddressListSofeware alloc]init];
+    [phone setSoftWare:software];
+    [phone playSoftPhone];
+    
 }
 
 - (void)didReceiveMemoryWarning {
