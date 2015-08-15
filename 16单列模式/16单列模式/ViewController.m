@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  15迭代器模式
+//  16单列模式
 //
-//  Created by 黄成都 on 15/8/15.
+//  Created by yifan on 15/8/15.
 //  Copyright (c) 2015年 黄成都. All rights reserved.
 //
 
@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)didReceiveMemoryWarning {

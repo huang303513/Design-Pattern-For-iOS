@@ -81,6 +81,7 @@
 		4D879BEB1B7EB25700DD9ECD /* 15迭代器模式 */ = {
 			isa = PBXGroup;
 			children = (
+				DD2D68561B7ECE2E00F9E848 /* 此模式oc已经完美的实现、不写代码了 */,
 				4D879BF01B7EB25700DD9ECD /* AppDelegate.h */,
 				4D879BF11B7EB25700DD9ECD /* AppDelegate.m */,
 				4D879BF31B7EB25700DD9ECD /* ViewController.h */,
@@ -117,6 +118,13 @@
 				4D879C071B7EB25800DD9ECD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD2D68561B7ECE2E00F9E848 /* 此模式oc已经完美的实现、不写代码了 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "此模式oc已经完美的实现、不写代码了";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -416,6 +424,7 @@
 				4D879C0E1B7EB25800DD9ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D879C0F1B7EB25800DD9ECD /* Build configuration list for PBXNativeTarget "15迭代器模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +433,7 @@
 				4D879C111B7EB25800DD9ECD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
