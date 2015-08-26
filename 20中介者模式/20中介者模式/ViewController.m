@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
-
+#import "HCDColleagueA.h"
+#import "HCDColleagueB.h"
+#import "HCDAbstractMediator.h"
+#import "HCDMediator.h"
 @interface ViewController ()
 
 @end
@@ -16,7 +19,22 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    HCDAbstractColleague *colleagueA = [[HCDColleagueA alloc]init];
+    HCDAbstractColleague *colleagueB = [[HCDColleagueB alloc]init];
+    
+    HCDAbstractMediator *mediator = [[HCDMediator alloc]initWithColleagueA:colleagueA colleagueB:colleagueB];
+    colleagueA.mediator = mediator;
+    colleagueB.mediator = mediator;
+    
+    colleagueA.number = 1450;
+    colleagueB.number = 1450;
+    [colleagueA notice];
+    NSLog(@"%f---%f",colleagueA.number,colleagueB.number);
+    colleagueB.number = 123;
+    [colleagueB notice];
+    NSLog(@"%f---%f",colleagueA.number,colleagueB.number);
 }
 
 - (void)didReceiveMemoryWarning {

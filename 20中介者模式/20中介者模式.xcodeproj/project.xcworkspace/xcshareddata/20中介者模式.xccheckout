@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>E16ECFE3-8D86-45F0-86C5-F69EF44A59B4</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>20中介者模式</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>97B4AD1D63A96A3E6D01F6FF529543E2092CC1C1</key>
 		<string>https://github.com/huang303513/Design-Pattern-For-iOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>20中介者模式/20中介者模式.xcodeproj/project.xcworkspace</string>
+	<string>20中介者模式/20中介者模式.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>97B4AD1D63A96A3E6D01F6FF529543E2092CC1C1</key>
