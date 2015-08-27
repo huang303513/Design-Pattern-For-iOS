@@ -14,6 +14,10 @@
 		DD2D69AE1B7F40C000F9E848 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2D69AD1B7F40C000F9E848 /* Images.xcassets */; };
 		DD2D69B11B7F40C000F9E848 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2D69AF1B7F40C000F9E848 /* LaunchScreen.xib */; };
 		DD2D69BD1B7F40C000F9E848 /* _1____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D69BC1B7F40C000F9E848 /* _1____Tests.m */; };
+		DDEA4B051B8EFF4600DF9EB5 /* 享元模式.png in Resources */ = {isa = PBXBuildFile; fileRef = DDEA4B041B8EFF4600DF9EB5 /* 享元模式.png */; };
+		DDEA4B081B8F001100DF9EB5 /* HCDUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA4B071B8F001100DF9EB5 /* HCDUser.m */; };
+		DDEA4B0C1B8F008E00DF9EB5 /* HCDConcreteWebSite.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA4B0B1B8F008E00DF9EB5 /* HCDConcreteWebSite.m */; };
+		DDEA4B0F1B8F012E00DF9EB5 /* HCDWebSiteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = DDEA4B0E1B8F012E00DF9EB5 /* HCDWebSiteFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		DD2D69B61B7F40C000F9E848 /* 21享元模式Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "21享元模式Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D69BB1B7F40C000F9E848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2D69BC1B7F40C000F9E848 /* _1____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_1____Tests.m"; sourceTree = "<group>"; };
+		DDEA4B041B8EFF4600DF9EB5 /* 享元模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "享元模式.png"; sourceTree = "<group>"; };
+		DDEA4B061B8F001100DF9EB5 /* HCDUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDUser.h; sourceTree = "<group>"; };
+		DDEA4B071B8F001100DF9EB5 /* HCDUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDUser.m; sourceTree = "<group>"; };
+		DDEA4B091B8F004300DF9EB5 /* HCDWebSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDWebSite.h; sourceTree = "<group>"; };
+		DDEA4B0A1B8F008E00DF9EB5 /* HCDConcreteWebSite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDConcreteWebSite.h; sourceTree = "<group>"; };
+		DDEA4B0B1B8F008E00DF9EB5 /* HCDConcreteWebSite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDConcreteWebSite.m; sourceTree = "<group>"; };
+		DDEA4B0D1B8F012E00DF9EB5 /* HCDWebSiteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDWebSiteFactory.h; sourceTree = "<group>"; };
+		DDEA4B0E1B8F012E00DF9EB5 /* HCDWebSiteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDWebSiteFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,8 @@
 		DD2D699F1B7F40C000F9E848 /* 21享元模式 */ = {
 			isa = PBXGroup;
 			children = (
+				DDEA4B031B8EFF3100DF9EB5 /* 享元模式 */,
+				DDEA4B041B8EFF4600DF9EB5 /* 享元模式.png */,
 				DD2D69A41B7F40C000F9E848 /* AppDelegate.h */,
 				DD2D69A51B7F40C000F9E848 /* AppDelegate.m */,
 				DD2D69A71B7F40C000F9E848 /* ViewController.h */,
@@ -117,6 +131,20 @@
 				DD2D69BB1B7F40C000F9E848 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DDEA4B031B8EFF3100DF9EB5 /* 享元模式 */ = {
+			isa = PBXGroup;
+			children = (
+				DDEA4B061B8F001100DF9EB5 /* HCDUser.h */,
+				DDEA4B071B8F001100DF9EB5 /* HCDUser.m */,
+				DDEA4B091B8F004300DF9EB5 /* HCDWebSite.h */,
+				DDEA4B0A1B8F008E00DF9EB5 /* HCDConcreteWebSite.h */,
+				DDEA4B0B1B8F008E00DF9EB5 /* HCDConcreteWebSite.m */,
+				DDEA4B0D1B8F012E00DF9EB5 /* HCDWebSiteFactory.h */,
+				DDEA4B0E1B8F012E00DF9EB5 /* HCDWebSiteFactory.m */,
+			);
+			name = "享元模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2D69AC1B7F40C000F9E848 /* Main.storyboard in Resources */,
+				DDEA4B051B8EFF4600DF9EB5 /* 享元模式.png in Resources */,
 				DD2D69B11B7F40C000F9E848 /* LaunchScreen.xib in Resources */,
 				DD2D69AE1B7F40C000F9E848 /* Images.xcassets in Resources */,
 			);
@@ -219,8 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEA4B0C1B8F008E00DF9EB5 /* HCDConcreteWebSite.m in Sources */,
 				DD2D69A91B7F40C000F9E848 /* ViewController.m in Sources */,
 				DD2D69A61B7F40C000F9E848 /* AppDelegate.m in Sources */,
+				DDEA4B081B8F001100DF9EB5 /* HCDUser.m in Sources */,
+				DDEA4B0F1B8F012E00DF9EB5 /* HCDWebSiteFactory.m in Sources */,
 				DD2D69A31B7F40C000F9E848 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +448,7 @@
 				DD2D69C21B7F40C000F9E848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2D69C31B7F40C000F9E848 /* Build configuration list for PBXNativeTarget "21享元模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +457,7 @@
 				DD2D69C51B7F40C000F9E848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
