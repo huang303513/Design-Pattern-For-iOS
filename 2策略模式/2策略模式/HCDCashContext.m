@@ -7,7 +7,9 @@
 //
 
 #import "HCDCashContext.h"
-
+#import "HCDCaseReturn.h"
+#import "HCDCashNormal.h"
+#import "HCDCashRobate.h"
 @interface HCDCashContext()
 @property(strong,nonatomic) id<HCDCashBase> cashSuper;
 @end
@@ -20,6 +22,23 @@
     }
     return self;
 }
+
+-(instancetype)initWithCashType:(HCDCashType)type{
+    self = [super init];
+    if (self) {
+        if (type == CashTypeNormal) {
+            self.cashSuper = [[HCDCashNormal alloc]init];
+           // self.cashSuper.money = money;
+        }else if(type == CashTypeRobate){
+            self.cashSuper = [[HCDCashRobate alloc]initWithMoneyRebate:0.8];
+           // self.cashSuper.money = money;
+        }else if(type == CashTypeReturn){
+            self.cashSuper = [[HCDCaseReturn alloc]initWithMoneyReturn:5];
+        }
+    }
+    return self;
+}
+
 -(CGFloat)getResult:(CGFloat)money{
     return [self.cashSuper acceptCash:money];
 }

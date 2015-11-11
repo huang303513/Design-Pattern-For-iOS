@@ -9,20 +9,21 @@
 #import "HCDCaseReturn.h"
 
 @interface HCDCaseReturn ()
-@property(nonatomic)CGFloat moneyCondition;
+
 @property(nonatomic)CGFloat moneyReturn;
 @end
 
 @implementation HCDCaseReturn
--(instancetype)initWithMoneyCondition:(CGFloat)moneyCondition moneyReturn:(CGFloat)moneyReturn{
+//@synthesize money = _money;
+
+-(instancetype)initWithMoneyReturn:(CGFloat)moneyReturn{
     self = [super init];
     if (self) {
-        _moneyCondition = moneyCondition;
         _moneyReturn = moneyReturn;
     }
     return self;
 }
 -(CGFloat)acceptCash:(CGFloat)cash{
-    return self.moneyCondition - self.moneyReturn;
+    return cash - self.moneyReturn;
 }
 @end

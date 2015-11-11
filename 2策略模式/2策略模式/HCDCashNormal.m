@@ -9,6 +9,9 @@
 #import "HCDCashNormal.h"
 
 @implementation HCDCashNormal
+
+//@synthesize money = _money;
+
 -(CGFloat)acceptCash:(CGFloat)cash{
     return cash;
 }

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM(NSInteger, CalculateType){
-    calcuteTypeAdd,
+    calcuteTypeAdd = 0,
     calcuteTypeMinus,
     calcuteTypdeMultipy,
     calcuteTypeDivide

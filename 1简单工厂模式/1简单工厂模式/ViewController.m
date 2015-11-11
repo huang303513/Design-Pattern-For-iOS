@@ -7,8 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "CommonTool.h"
-#import "HCDCalculate.h"
 #import "HCDCalcuteFactory.h"
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *numberA;
@@ -29,15 +27,7 @@
 - (IBAction)calculate:(id)sender {
     id<HCDCalculate> cal;
     
-    if ([self.countTextField.text isEqualToString:@"+"]) {
-        cal =[HCDCalcuteFactory createCalcute:calcuteTypeAdd];
-    }else if([self.countTextField.text isEqualToString:@"-"]){
-        cal = [HCDCalcuteFactory createCalcute:calcuteTypeMinus];
-    }else if ([self.countTextField.text isEqualToString:@"*"]) {
-        cal =[HCDCalcuteFactory createCalcute:calcuteTypdeMultipy];
-    }else if([self.countTextField.text isEqualToString:@"/"]){
-        cal = [HCDCalcuteFactory createCalcute:calcuteTypeDivide];
-    }
+    cal =[HCDCalcuteFactory createCalcute:self.countTextField.text];
     cal.numberA = [self.numberA.text floatValue];
     cal.numberB = [self.numberB.text floatValue];
     CGFloat result =  [cal calculate];

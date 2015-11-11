@@ -13,6 +13,7 @@
 @end
 
 @implementation HCDCashRobate
+//@synthesize money = _money;
 -(instancetype)initWithMoneyRebate:(CGFloat)moneyRebate{
     self = [super init];
     if (self) {

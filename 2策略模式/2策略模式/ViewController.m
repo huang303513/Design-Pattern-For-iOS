@@ -20,13 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    HCDCashRobate *robate = [[HCDCashRobate alloc]initWithMoneyRebate:0.8];
-    HCDCashContext *context = [[HCDCashContext alloc]initWithCashSuper:robate];
-    NSLog(@"结果是%f",[context getResult:100]);
+
     
-    HCDCaseReturn *cashReturn = [[HCDCaseReturn alloc]initWithMoneyCondition:300 moneyReturn:100];
-    HCDCashContext *contextReturn = [[HCDCashContext alloc]initWithCashSuper:cashReturn];
-    NSLog(@"结果是%f",[contextReturn getResult:0]);
+    HCDCashContext *context = [[HCDCashContext alloc]initWithCashType:CashTypeNormal];
+    NSLog(@"结果是%f",[context getResult:100]);
+
+    
+    HCDCashContext *contextReturn = [[HCDCashContext alloc]initWithCashType:CashTypeReturn];
+    NSLog(@"结果是%f",[contextReturn getResult:100]);
+    
+    HCDCashContext *contextRobate = [[HCDCashContext alloc]initWithCashType:CashTypeRobate];
+    NSLog(@"结果是%f",[contextRobate getResult:100]);
 }
 
 - (void)didReceiveMemoryWarning {

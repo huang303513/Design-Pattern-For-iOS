@@ -8,7 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import "HCDCashBase.h"
+
+
+typedef NS_ENUM(NSInteger, HCDCashType){
+    CashTypeNormal = 0,
+    CashTypeRobate,
+    CashTypeReturn
+};
+
+
 @interface HCDCashContext : NSObject
 -(instancetype)initWithCashSuper:(id<HCDCashBase>)cashBase;
+-(instancetype)initWithCashType:(HCDCashType)type;
 -(CGFloat)getResult:(CGFloat)money;
 @end

@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 @protocol HCDCashBase <NSObject>
+//@property(nonatomic,assign)CGFloat money;
 -(CGFloat)acceptCash:(CGFloat)cash;
 @end

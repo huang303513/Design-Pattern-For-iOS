@@ -11,11 +11,17 @@
 #import "HCDCalculateDivide.h"
 #import "HCDCalculateMinus.h"
 #import "HCDCalcuteMultiply.h"
+#import "CommonTool.h"
 
 
 @implementation HCDCalcuteFactory
-+(id<HCDCalculate>)createCalcute:(CalculateType)calculatetype{
-    switch (calculatetype) {
++(id<HCDCalculate>)createCalcute:(NSString *)calculatetype{
+    
+    NSArray *calculateArray = @[@"+",@"-",@"*",@"/"];
+    CalculateType calType = [calculateArray indexOfObject:calculatetype];
+    
+    
+    switch (calType) {
         case calcuteTypeAdd:
             return [[HCDCalculateAdd alloc]init];
             break;

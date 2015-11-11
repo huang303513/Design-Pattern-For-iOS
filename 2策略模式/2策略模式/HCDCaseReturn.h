@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 #import "HCDCashBase.h"
 @interface HCDCaseReturn : NSObject<HCDCashBase>
--(instancetype)initWithMoneyCondition:(CGFloat)moneyCondition moneyReturn:(CGFloat)moneyReturn;
+-(instancetype)initWithMoneyReturn:(CGFloat)moneyReturn;
 @end
