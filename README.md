@@ -44,3 +44,11 @@
 
 [Cocoa如何应用设计模式](http://www.cnblogs.com/pengyingh/articles/2346299.html)
 
+[设计模式问答一](http://mp.weixin.qq.com/s?__biz=MzAxNzA1ODY2OA==&mid=204772288&idx=1&sn=182ebf11253f80579f386f0c9cf4750e#rd)
+
+[设计模式问答二](http://mp.weixin.qq.com/s?__biz=MzAxNzA1ODY2OA==&mid=205051580&idx=1&sn=8dfca32f8598544922ff0adc8a6f76a4#rd)
+
+[设计模式问答三](http://mp.weixin.qq.com/s?__biz=MzAxNzA1ODY2OA==&mid=205377346&idx=1&sn=1ea5f7328e5f545984c2c54a84a54a93#rd)
+
+[设计模式问答四](http://mp.weixin.qq.com/s?__biz=MzAxNzA1ODY2OA==&mid=205598648&idx=1&sn=4351450c6168c4c318ca362741ac152e#rd)
+
