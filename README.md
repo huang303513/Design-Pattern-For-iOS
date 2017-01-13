@@ -44,6 +44,8 @@
 
 [Cocoa如何应用设计模式](http://www.cnblogs.com/pengyingh/articles/2346299.html)
 
+[大话设计模式阅读笔记](http://www.jianshu.com/p/47c67255c842)
+
 [设计模式问答一](http://mp.weixin.qq.com/s?__biz=MzAxNzA1ODY2OA==&mid=204772288&idx=1&sn=182ebf11253f80579f386f0c9cf4750e#rd)
 
 [设计模式问答二](http://mp.weixin.qq.com/s?__biz=MzAxNzA1ODY2OA==&mid=205051580&idx=1&sn=8dfca32f8598544922ff0adc8a6f76a4#rd)
