@@ -14,9 +14,8 @@
  */
 @synthesize numberA = _numberA;
 @synthesize numberB = _numberB;
-@synthesize test = _test;
+
 -(CGFloat)calculate{
-    NSLog(@"%@",_test);
     return self.numberA + self.numberB;
 }
 @end

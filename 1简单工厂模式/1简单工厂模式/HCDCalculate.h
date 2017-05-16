@@ -15,6 +15,6 @@
 
 @property(nonatomic)CGFloat numberA;
 @property(nonatomic)CGFloat numberB;
-@property(nonatomic,strong)NSString *test;
+
 -(CGFloat)calculate;
 @end
