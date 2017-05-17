@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 #import "HCDPersonBuilderDirector.h"
-
+#import "HCDPersonFatBuilder.h"
+#import "HCDPersonThinBuilder.h"
 
 
 
@@ -24,16 +25,21 @@
 
 - (IBAction)buildFat:(id)sender {
     HCDPersonBuilderDirector *director = [[HCDPersonBuilderDirector alloc]init];
-    HCDPresionBuilder builder = [director builderWithType:BuildFat];
-    [builder buildPerson];
+    HCDPresionBuilder builder = [[HCDPersonFatBuilder alloc]init];
+    //为director指定builder
+    director.builder = builder;
+    //director发出构建的指令，builder负责具体的建造过程
+    [director buildPerson];
 }
 
 - (IBAction)buildThin:(id)sender {
+    
     HCDPersonBuilderDirector *director = [[HCDPersonBuilderDirector alloc]init];
-    //director发出构建的指令
-    HCDPresionBuilder builder = [director builderWithType:BuildThin];
-    //builder负责具体的构建
-    [builder buildPerson];
+    HCDPresionBuilder builder = [[HCDPersonThinBuilder alloc]init];
+    //为director指定builder
+    director.builder = builder;
+    //director发出构建的指令，builder负责具体的建造过程
+    [director buildPerson];
 }
 
 @end

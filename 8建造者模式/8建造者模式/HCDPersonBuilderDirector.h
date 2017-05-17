@@ -11,6 +11,9 @@
 
 @interface HCDPersonBuilderDirector : NSObject
 
-- (HCDPresionBuilder)builderWithType:(BuildOption)type;
+
+@property(nonatomic, strong)HCDPresionBuilder builder;
+
+-(void)buildPerson;
 
 @end

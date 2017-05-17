@@ -13,21 +13,14 @@
 
 @interface HCDPersonBuilderDirector ()
 
-@property(nonatomic, strong)HCDPresionBuilder builder;
 @end
 
 @implementation HCDPersonBuilderDirector
 
 
-- (HCDPresionBuilder)builderWithType:(BuildOption)type{
-    
-    switch (type) {
-        case BuildFat:
-            return [[HCDPersonFatBuilder alloc]init];
-            break;
-        case BuildThin:
-           return [[HCDPersonThinBuilder alloc]init];
-    }
+-(void)buildPerson{
+    NSLog(@"===============director指挥builder开始建造====================");
+    [self.builder buildPerson];
 }
 
 @end
