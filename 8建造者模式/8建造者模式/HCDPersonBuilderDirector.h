@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 #import "HCDPresionBuilder.h"
+
 @interface HCDPersonBuilderDirector : NSObject
--(instancetype)initWithPersonBuilder:(id<HCDPresionBuilder>)builder;
--(void)buildPerson;
+
+- (HCDPresionBuilder)builderWithType:(BuildOption)type;
+
 @end

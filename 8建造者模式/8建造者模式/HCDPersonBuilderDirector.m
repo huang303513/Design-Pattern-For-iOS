@@ -7,25 +7,27 @@
 //
 
 #import "HCDPersonBuilderDirector.h"
+#import "HCDPersonFatBuilder.h"
+#import "HCDPersonThinBuilder.h"
+
 
 @interface HCDPersonBuilderDirector ()
-@property(nonatomic,strong)id<HCDPresionBuilder> builder;
+
+@property(nonatomic, strong)HCDPresionBuilder builder;
 @end
 
 @implementation HCDPersonBuilderDirector
--(instancetype)initWithPersonBuilder:(id<HCDPresionBuilder>)builder{
-    self = [super init];
-    if (self) {
-        _builder = builder;
+
+
+- (HCDPresionBuilder)builderWithType:(BuildOption)type{
+    
+    switch (type) {
+        case BuildFat:
+            return [[HCDPersonFatBuilder alloc]init];
+            break;
+        case BuildThin:
+           return [[HCDPersonThinBuilder alloc]init];
     }
-    return self;
 }
--(void)buildPerson{
-    [self.builder buildHead];
-    [self.builder buildBody];
-    [self.builder buildArmLeft];
-    [self.builder buildArmRight];
-    [self.builder buildLegLeft];
-    [self.builder buildLegRight];
-}
+
 @end

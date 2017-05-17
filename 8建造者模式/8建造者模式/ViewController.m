@@ -8,11 +8,9 @@
 
 #import "ViewController.h"
 #import "HCDPersonBuilderDirector.h"
-#import "HCDPersonFatBuilder.h"
-#import "HCDPersonThinBuilder.h"
-#import "HCDPresionBuilder.h"
 
-typedef id<HCDPresionBuilder> HCDPresionBuilder;
+
+
 
 @interface ViewController ()
 
@@ -22,11 +20,20 @@ typedef id<HCDPresionBuilder> HCDPresionBuilder;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    HCDPresionBuilder builder = [[HCDPersonFatBuilder alloc]init];
-    HCDPersonBuilderDirector *fatDirector = [[HCDPersonBuilderDirector alloc]initWithPersonBuilder:builder];
-    [fatDirector buildPerson];
-    
-    
 }
+
+- (IBAction)buildFat:(id)sender {
+    HCDPersonBuilderDirector *director = [[HCDPersonBuilderDirector alloc]init];
+    HCDPresionBuilder builder = [director builderWithType:BuildFat];
+    [builder buildPerson];
+}
+
+- (IBAction)buildThin:(id)sender {
+    HCDPersonBuilderDirector *director = [[HCDPersonBuilderDirector alloc]init];
+    //director发出构建的指令
+    HCDPresionBuilder builder = [director builderWithType:BuildThin];
+    //builder负责具体的构建
+    [builder buildPerson];
+}
+
 @end

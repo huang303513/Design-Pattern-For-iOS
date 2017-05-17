@@ -8,11 +8,24 @@
 
 #import <Foundation/Foundation.h>
 
+typedef  NS_ENUM(NSUInteger,BuildOption){
+    BuildFat,
+    BuildThin
+};
+
+
+
 @protocol HCDPresionBuilder <NSObject>
+
 -(void)buildHead;
 -(void)buildBody;
 -(void)buildArmLeft;
 -(void)buildArmRight;
 -(void)buildLegLeft;
 -(void)buildLegRight;
+
+- (void)buildPerson;
+
 @end
+
+typedef id<HCDPresionBuilder> HCDPresionBuilder;
