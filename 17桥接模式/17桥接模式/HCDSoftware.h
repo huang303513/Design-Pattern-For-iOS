@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @protocol HCDSoftware <NSObject>
--(void)run;
+-(void)runQQ;
+-(void)runWeixin;
+-(void)runWord;
+-(void)runXcode;
+-(void)runQQDizhu;
+-(void)runQQMajiang;
 @end
+
+typedef id<HCDSoftware> HCDSoftware;

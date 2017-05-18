@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "HCDSoftware.h"
+
+
 @interface HCDGameSoftware : NSObject<HCDSoftware>
 
 @end

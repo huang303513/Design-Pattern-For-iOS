@@ -7,9 +7,19 @@
 //
 
 #import "HCDGameSoftware.h"
+#import "HCDSoftware.h"
+
+@interface HCDGameSoftware ()<HCDSoftware>
+
+@end
 
 @implementation HCDGameSoftware
--(void)run{
-    NSLog(@"运行游戏手机软件");
+
+-(void)runQQDizhu{
+    NSLog(@"GameSoftware开始QQ斗地主");
+}
+
+-(void)runQQMajiang{
+    NSLog(@"GameSoftware开始QQ麻将");
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "HCDPhone.h"
+
 @interface HCDNokiaPhone : HCDPhone
 
 @end

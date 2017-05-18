@@ -9,28 +9,43 @@
 #import "ViewController.h"
 #import "HCDPhone.h"
 #import "HCDNokiaPhone.h"
-#import "HCDSonyPhone.h"
-#import "HCDSoftware.h"
-#import "HCDGameSoftware.h"
-#import "HCDGameNokiaSoftware.h"
-#import "HCDAddressListSofeware.h"
-typedef id<HCDSoftware> HCDSoftware;
+
+
+
+
 @interface ViewController ()
 
+@property(nonatomic, strong)HCDPhone *phone;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    HCDPhone *phone = [[HCDNokiaPhone alloc]init];
-    HCDSoftware software = [[HCDGameNokiaSoftware alloc]init];
-    [phone setSoftWare:software];
-    [phone playSoftPhone];
-    software = [[HCDAddressListSofeware alloc]init];
-    [phone setSoftWare:software];
-    [phone playSoftPhone];
+    self.phone = [[HCDNokiaPhone alloc]init];
     
+    
+    
+}
+
+
+- (IBAction)play:(id)sender {
+    
+    [self.phone play];
+    NSLog(@"============================");
+}
+
+- (IBAction)work:(id)sender {
+    
+    [self.phone work];
+    NSLog(@"============================");
+
+}
+
+- (IBAction)game:(id)sender {
+    
+    [self.phone game];
+    NSLog(@"============================");
 }
 
 - (void)didReceiveMemoryWarning {

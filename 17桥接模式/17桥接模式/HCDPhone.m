@@ -9,7 +9,5 @@
 #import "HCDPhone.h"
 
 @implementation HCDPhone
--(void)playSoftPhone{
-    [self.softWare run];
-}
+
 @end
