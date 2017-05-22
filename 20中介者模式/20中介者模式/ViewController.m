@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "HCDColleagueA.h"
-#import "HCDColleagueB.h"
-#import "HCDAbstractMediator.h"
-#import "HCDMediator.h"
+#import "ConcreteColleague1.h"
+#import "ConcreteColleague2.h"
+#import "ConcreteMediator.h"
+
+
 @interface ViewController ()
 
 @end
@@ -19,27 +20,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //初始化一个中介者对象
+    ConcreteMediator *mediator = [[ConcreteMediator alloc]init];
+    //初始化并且让两个同事有相同的中介者对象
+    ConcreteColleague1 *c1 = [[ConcreteColleague1 alloc]initWithMediator:mediator];
+    ConcreteColleague2 *c2 = [[ConcreteColleague2 alloc]initWithMediator:mediator];
+    //给中介者对象绑定两个要交互的同事对象
+    mediator.colleague1 = c1;
+    mediator.colleague2 = c2;
     
+    [c1 send:@"吃过饭了吗？"];
+    [c2 send:@"没有呢，你打算请客？"];
     
-    HCDAbstractColleague *colleagueA = [[HCDColleagueA alloc]init];
-    HCDAbstractColleague *colleagueB = [[HCDColleagueB alloc]init];
-    
-    HCDAbstractMediator *mediator = [[HCDMediator alloc]initWithColleagueA:colleagueA colleagueB:colleagueB];
-    colleagueA.mediator = mediator;
-    colleagueB.mediator = mediator;
-    
-    colleagueA.number = 1450;
-    colleagueB.number = 1450;
-    [colleagueA notice];
-    NSLog(@"%f---%f",colleagueA.number,colleagueB.number);
-    colleagueB.number = 123;
-    [colleagueB notice];
-    NSLog(@"%f---%f",colleagueA.number,colleagueB.number);
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

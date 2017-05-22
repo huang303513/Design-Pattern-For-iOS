@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4D008F541B8DF5A7003CA07A /* 中介者模式.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D008F531B8DF5A7003CA07A /* 中介者模式.png */; };
-		4D008F581B8DF81A003CA07A /* HCDAbstractColleague.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D008F571B8DF81A003CA07A /* HCDAbstractColleague.m */; };
-		4D008F5F1B8DFA90003CA07A /* HCDMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D008F5E1B8DFA90003CA07A /* HCDMediator.m */; };
-		4D008F621B8DFADB003CA07A /* HCDColleagueA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D008F611B8DFADB003CA07A /* HCDColleagueA.m */; };
-		4D008F651B8DFAEB003CA07A /* HCDColleagueB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D008F641B8DFAEB003CA07A /* HCDColleagueB.m */; };
-		4D008F681B8E0275003CA07A /* HCDAbstractMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D008F671B8E0275003CA07A /* HCDAbstractMediator.m */; };
+		4D0B4E1A1ED2D82400BB8AA0 /* Mediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B4E191ED2D82400BB8AA0 /* Mediator.m */; };
+		4D0B4E1D1ED2D83700BB8AA0 /* Colleague.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B4E1C1ED2D83700BB8AA0 /* Colleague.m */; };
+		4D0B4E201ED2D8EA00BB8AA0 /* ConcreteMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B4E1F1ED2D8EA00BB8AA0 /* ConcreteMediator.m */; };
+		4D0B4E231ED2D95000BB8AA0 /* ConcreteColleague1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B4E221ED2D95000BB8AA0 /* ConcreteColleague1.m */; };
+		4D0B4E261ED2D95C00BB8AA0 /* ConcreteColleague2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0B4E251ED2D95C00BB8AA0 /* ConcreteColleague2.m */; };
 		DD2D69711B7F409900F9E848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D69701B7F409900F9E848 /* main.m */; };
 		DD2D69741B7F409900F9E848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D69731B7F409900F9E848 /* AppDelegate.m */; };
 		DD2D69771B7F409900F9E848 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D69761B7F409900F9E848 /* ViewController.m */; };
@@ -34,16 +34,16 @@
 
 /* Begin PBXFileReference section */
 		4D008F531B8DF5A7003CA07A /* 中介者模式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中介者模式.png"; sourceTree = "<group>"; };
-		4D008F561B8DF81A003CA07A /* HCDAbstractColleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDAbstractColleague.h; sourceTree = "<group>"; };
-		4D008F571B8DF81A003CA07A /* HCDAbstractColleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDAbstractColleague.m; sourceTree = "<group>"; };
-		4D008F5D1B8DFA90003CA07A /* HCDMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDMediator.h; sourceTree = "<group>"; };
-		4D008F5E1B8DFA90003CA07A /* HCDMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDMediator.m; sourceTree = "<group>"; };
-		4D008F601B8DFADB003CA07A /* HCDColleagueA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDColleagueA.h; sourceTree = "<group>"; };
-		4D008F611B8DFADB003CA07A /* HCDColleagueA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDColleagueA.m; sourceTree = "<group>"; };
-		4D008F631B8DFAEB003CA07A /* HCDColleagueB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDColleagueB.h; sourceTree = "<group>"; };
-		4D008F641B8DFAEB003CA07A /* HCDColleagueB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDColleagueB.m; sourceTree = "<group>"; };
-		4D008F661B8E0275003CA07A /* HCDAbstractMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDAbstractMediator.h; sourceTree = "<group>"; };
-		4D008F671B8E0275003CA07A /* HCDAbstractMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDAbstractMediator.m; sourceTree = "<group>"; };
+		4D0B4E181ED2D82400BB8AA0 /* Mediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mediator.h; sourceTree = "<group>"; };
+		4D0B4E191ED2D82400BB8AA0 /* Mediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mediator.m; sourceTree = "<group>"; };
+		4D0B4E1B1ED2D83700BB8AA0 /* Colleague.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colleague.h; sourceTree = "<group>"; };
+		4D0B4E1C1ED2D83700BB8AA0 /* Colleague.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colleague.m; sourceTree = "<group>"; };
+		4D0B4E1E1ED2D8EA00BB8AA0 /* ConcreteMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteMediator.h; sourceTree = "<group>"; };
+		4D0B4E1F1ED2D8EA00BB8AA0 /* ConcreteMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteMediator.m; sourceTree = "<group>"; };
+		4D0B4E211ED2D95000BB8AA0 /* ConcreteColleague1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteColleague1.h; sourceTree = "<group>"; };
+		4D0B4E221ED2D95000BB8AA0 /* ConcreteColleague1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleague1.m; sourceTree = "<group>"; };
+		4D0B4E241ED2D95C00BB8AA0 /* ConcreteColleague2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteColleague2.h; sourceTree = "<group>"; };
+		4D0B4E251ED2D95C00BB8AA0 /* ConcreteColleague2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteColleague2.m; sourceTree = "<group>"; };
 		DD2D696B1B7F409900F9E848 /* 20中介者模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20中介者模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D696F1B7F409900F9E848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2D69701B7F409900F9E848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,21 +77,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4D008F551B8DF5B3003CA07A /* 终结者模式 */ = {
+		4D0B4E101ED2D1B800BB8AA0 /* 中介者模式 */ = {
 			isa = PBXGroup;
 			children = (
-				4D008F561B8DF81A003CA07A /* HCDAbstractColleague.h */,
-				4D008F571B8DF81A003CA07A /* HCDAbstractColleague.m */,
-				4D008F5D1B8DFA90003CA07A /* HCDMediator.h */,
-				4D008F5E1B8DFA90003CA07A /* HCDMediator.m */,
-				4D008F601B8DFADB003CA07A /* HCDColleagueA.h */,
-				4D008F611B8DFADB003CA07A /* HCDColleagueA.m */,
-				4D008F631B8DFAEB003CA07A /* HCDColleagueB.h */,
-				4D008F641B8DFAEB003CA07A /* HCDColleagueB.m */,
-				4D008F661B8E0275003CA07A /* HCDAbstractMediator.h */,
-				4D008F671B8E0275003CA07A /* HCDAbstractMediator.m */,
+				4D0B4E121ED2D1D500BB8AA0 /* Colleague */,
+				4D0B4E111ED2D1CB00BB8AA0 /* Mediator */,
 			);
-			name = "终结者模式";
+			name = "中介者模式";
+			sourceTree = "<group>";
+		};
+		4D0B4E111ED2D1CB00BB8AA0 /* Mediator */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B4E181ED2D82400BB8AA0 /* Mediator.h */,
+				4D0B4E191ED2D82400BB8AA0 /* Mediator.m */,
+				4D0B4E1E1ED2D8EA00BB8AA0 /* ConcreteMediator.h */,
+				4D0B4E1F1ED2D8EA00BB8AA0 /* ConcreteMediator.m */,
+			);
+			name = Mediator;
+			sourceTree = "<group>";
+		};
+		4D0B4E121ED2D1D500BB8AA0 /* Colleague */ = {
+			isa = PBXGroup;
+			children = (
+				4D0B4E1B1ED2D83700BB8AA0 /* Colleague.h */,
+				4D0B4E1C1ED2D83700BB8AA0 /* Colleague.m */,
+				4D0B4E211ED2D95000BB8AA0 /* ConcreteColleague1.h */,
+				4D0B4E221ED2D95000BB8AA0 /* ConcreteColleague1.m */,
+				4D0B4E241ED2D95C00BB8AA0 /* ConcreteColleague2.h */,
+				4D0B4E251ED2D95C00BB8AA0 /* ConcreteColleague2.m */,
+			);
+			name = Colleague;
 			sourceTree = "<group>";
 		};
 		DD2D69621B7F409900F9E848 = {
@@ -115,7 +131,7 @@
 		DD2D696D1B7F409900F9E848 /* 20中介者模式 */ = {
 			isa = PBXGroup;
 			children = (
-				4D008F551B8DF5B3003CA07A /* 终结者模式 */,
+				4D0B4E101ED2D1B800BB8AA0 /* 中介者模式 */,
 				4D008F531B8DF5A7003CA07A /* 中介者模式.png */,
 				DD2D69721B7F409900F9E848 /* AppDelegate.h */,
 				DD2D69731B7F409900F9E848 /* AppDelegate.m */,
@@ -256,14 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D008F681B8E0275003CA07A /* HCDAbstractMediator.m in Sources */,
-				4D008F5F1B8DFA90003CA07A /* HCDMediator.m in Sources */,
 				DD2D69771B7F409900F9E848 /* ViewController.m in Sources */,
-				4D008F581B8DF81A003CA07A /* HCDAbstractColleague.m in Sources */,
-				4D008F621B8DFADB003CA07A /* HCDColleagueA.m in Sources */,
+				4D0B4E231ED2D95000BB8AA0 /* ConcreteColleague1.m in Sources */,
 				DD2D69741B7F409900F9E848 /* AppDelegate.m in Sources */,
+				4D0B4E1D1ED2D83700BB8AA0 /* Colleague.m in Sources */,
+				4D0B4E1A1ED2D82400BB8AA0 /* Mediator.m in Sources */,
+				4D0B4E261ED2D95C00BB8AA0 /* ConcreteColleague2.m in Sources */,
 				DD2D69711B7F409900F9E848 /* main.m in Sources */,
-				4D008F651B8DFAEB003CA07A /* HCDColleagueB.m in Sources */,
+				4D0B4E201ED2D8EA00BB8AA0 /* ConcreteMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
