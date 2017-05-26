@@ -1,10 +1,22 @@
+## 23种设计模式iOS实现
 
-#IOS设计模式探索
-##常用的 23 种设计模式
+### 策略模式（Strategy）
 
-不管是 .NET 中的 C# 语言，还是 Java、VB.NET、C++ 或 Objective-C 语言，面向对象语言在设计模式的层面上都是相通的，只不过在设计模式的具体实现上语法稍有差异罢了：
+它定义了算法家族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化，不会影响到使用算法的客户。通过一个Context指定一个Strategy，通过Strategy的子类实现不同的算法。</br>
+![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E7%AD%96%E7%95%A5%E6%A8%A1%E5%BC%8F.png)</br>
 
-    策略模式（Strategy），它定义了算法家族，分别封装起来，让它们之间可以互相替换，此模式让算法的变化，不会影响到使用算法的客户。
+````objc
+//策略模式配合简单工厂模式，同样的最初价格，返回不同的最终价格。不同的type就是不同的策略。
+HCDCashContext *context = [[HCDCashContext alloc]initWithCashType:CashTypeNormal];
+NSLog(@"结果是%f",[context getResult:100]);
+HCDCashContext *contextReturn = [[HCDCashContext alloc]initWithCashType:CashTypeReturn];
+NSLog(@"结果是%f",[contextReturn getResult:100]);
+HCDCashContext *contextRobate = [[HCDCashContext alloc]initWithCashType:CashTypeRobate];
+NSLog(@"结果是%f",[contextRobate getResult:100]);
+````
+
+
+
     装饰模式（Decorator），动态地给一个对象添加一些额外的职责，就增加功能来说，装饰模式比生成子类更为灵活。
     代理模式（Proxy），为其他对象提供一种代理以控制对这个对象的访问。
     工厂方法模式（Factory Method），定义一个用于创建对象的接口，让子类决定实例化哪一个类。工厂方法使一个类的实例化延迟到其子类。
@@ -30,8 +42,7 @@
 
 
 
-
-设计模式的基本原则非常重要，只要真正深入地理解了设计原则，很多设计模式其实就是原则的应用而已，或许在不知不觉中就在使用设计模式了：
+## 六个原则
 
     单一职责原则（SRP），就一个类而言，只做一件事。
     开放-封闭原则（OCP），是说软件实体（类、模块、函数等等）应该可以拓展，但是不可修改。
@@ -40,7 +51,7 @@
     迪米特法则（LoD），如果两个类不必彼此直接通信，那么这两个类就不应当发生直接的相互作用。如果其中一个类需要调用另一个类的某一个方法的话，可以通过第三者转发这个调用。
     合成/聚合复用原则（CARP），尽量使用合成/聚合，尽量不要使用类继承。
 
-#参考博文推荐：
+## 参考博文推荐：
 
 [Cocoa如何应用设计模式](http://www.cnblogs.com/pengyingh/articles/2346299.html)
 
