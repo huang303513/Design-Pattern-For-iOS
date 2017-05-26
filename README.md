@@ -65,7 +65,7 @@ NSLog(@"结果是%f",[calculate calculate]);
 ### 原型模式（Prototype）
 
 用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。</br>
-![img]()</br>
+![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E5%8E%9F%E5%9E%8B%E6%A8%A1%E5%BC%8F.png)</br>
 
 ````objc
 //NSObject类对象作为原型
@@ -291,11 +291,29 @@ mediator.colleague2 = c2;
     
 ### 访问者模式（Visitor）
 
-表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类的前提下定义作用于这些元素的新操作。</br>
+表示一个作用于某对象结构中的各元素的操作。它使你可以在不改变各元素的类(男人，女人)的前提下定义作用于这些元素的新操作(喜怒哀乐)。他把数据结构(男人，女人)和作用于数据结构之上的操作(喜怒哀乐)之间的耦合解脱开，使得操作集合可以相对自由地演化</br>
 ![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E8%AE%BF%E9%97%AE%E8%80%85%E6%A8%A1%E5%BC%8F.png)</br>
 
 ````objc
-
+访问者模式的有点就是增加新的操作很容易，因为增加新的操作就意味着增加一个新的访问者。
+/*
+ HCDConcreteElementA和HCDConcreteElementB相当于男人女人(固定不变)，当男人女人接收到喜怒哀乐(HCDConcreteVisitor1,HCDConcreteVisitor2)有不同的结果。HCDObjectStructure用于管理他们之间的关系。
+ */
+HCDObjectStructure *o = [[HCDObjectStructure alloc]init];
+//初始化不同的element对象
+HCDConcreteElementA *eA = [HCDConcreteElementA new];
+HCDConcreteElementB *eB = [HCDConcreteElementB new];
+//加入o对象里面，存在一个数据结构o中。
+[o attach:eA];
+[o attach:eB];
+//初始化不同的visitor对象。
+HCDConcreteVisitor1 *v1 = [HCDConcreteVisitor1 new];
+HCDConcreteVisitor2 *v2 = [HCDConcreteVisitor2 new];
+//eA,eB(男人女人)接收到访问者v1(喜)的不同反应。
+[o accept: v1];
+NSLog(@"================================");
+//eA,eB(男人女人)接收到访问者v2(怒)的不同反应。
+[o accept: v2];
 ````
 
 ## 六个原则

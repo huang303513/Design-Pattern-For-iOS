@@ -7,13 +7,14 @@
 //
 
 #import "HCDConcreteVisitor2.h"
-#import "HCDConcreteElementB.h"
+
 @implementation HCDConcreteVisitor2
--(void)VisitConcreteElementB:(HCDConcreteElementB *)concreteElementB{
-    NSString *eleName = NSStringFromClass([concreteElementB class]);
-    
-    NSString *visitorName = NSStringFromClass([self class]);
-    
-    NSLog(@"%@被%@访问",eleName, visitorName);
+
+-(void)visitConcreteElementA:(HCDConcreteElementA *)concreteElementA{
+    NSLog(@"男人接收到怒这个visitor============我要叫");
+}
+
+-(void)visitConcreteElementB:(HCDConcreteElementB *)concreteElementB{
+    NSLog(@"女人接收到怒这个visitor============我要苦");
 }
 @end

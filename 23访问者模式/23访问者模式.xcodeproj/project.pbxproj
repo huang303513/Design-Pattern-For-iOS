@@ -81,6 +81,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D1868E71ED82CFC00F8C3C0 /* element */ = {
+			isa = PBXGroup;
+			children = (
+				4DC842111B8F46B500DD1E28 /* HCDElements.h */,
+				4DC842121B8F46B500DD1E28 /* HCDElements.m */,
+				4DC842141B8F471A00DD1E28 /* HCDConcreteElementA.h */,
+				4DC842151B8F471A00DD1E28 /* HCDConcreteElementA.m */,
+				4DC842171B8F478600DD1E28 /* HCDConcreteElementB.h */,
+				4DC842181B8F478600DD1E28 /* HCDConcreteElementB.m */,
+			);
+			name = element;
+			sourceTree = "<group>";
+		};
+		4D1868E81ED82D0500F8C3C0 /* visitor */ = {
+			isa = PBXGroup;
+			children = (
+				4DC842081B8F462900DD1E28 /* HCDVisitors.h */,
+				4DC842091B8F462900DD1E28 /* HCDVisitors.m */,
+				4DC8420B1B8F465A00DD1E28 /* HCDConcreteVisitor1.h */,
+				4DC8420C1B8F465A00DD1E28 /* HCDConcreteVisitor1.m */,
+				4DC8420E1B8F467100DD1E28 /* HCDConcreteVisitor2.h */,
+				4DC8420F1B8F467100DD1E28 /* HCDConcreteVisitor2.m */,
+			);
+			name = visitor;
+			sourceTree = "<group>";
+		};
 		4DC841D51B8F45D500DD1E28 = {
 			isa = PBXGroup;
 			children = (
@@ -144,18 +170,8 @@
 		4DC842071B8F45DF00DD1E28 /* 访问者模式 */ = {
 			isa = PBXGroup;
 			children = (
-				4DC842081B8F462900DD1E28 /* HCDVisitors.h */,
-				4DC842091B8F462900DD1E28 /* HCDVisitors.m */,
-				4DC8420B1B8F465A00DD1E28 /* HCDConcreteVisitor1.h */,
-				4DC8420C1B8F465A00DD1E28 /* HCDConcreteVisitor1.m */,
-				4DC8420E1B8F467100DD1E28 /* HCDConcreteVisitor2.h */,
-				4DC8420F1B8F467100DD1E28 /* HCDConcreteVisitor2.m */,
-				4DC842111B8F46B500DD1E28 /* HCDElements.h */,
-				4DC842121B8F46B500DD1E28 /* HCDElements.m */,
-				4DC842141B8F471A00DD1E28 /* HCDConcreteElementA.h */,
-				4DC842151B8F471A00DD1E28 /* HCDConcreteElementA.m */,
-				4DC842171B8F478600DD1E28 /* HCDConcreteElementB.h */,
-				4DC842181B8F478600DD1E28 /* HCDConcreteElementB.m */,
+				4D1868E81ED82D0500F8C3C0 /* visitor */,
+				4D1868E71ED82CFC00F8C3C0 /* element */,
 				4DC8421A1B8F482600DD1E28 /* HCDObjectStructure.h */,
 				4DC8421B1B8F482600DD1E28 /* HCDObjectStructure.m */,
 			);
@@ -466,6 +482,7 @@
 				4DC842031B8F45D500DD1E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4DC842041B8F45D500DD1E28 /* Build configuration list for PBXNativeTarget "23访问者模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +491,7 @@
 				4DC842061B8F45D500DD1E28 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -9,7 +9,9 @@
 #import "HCDObjectStructure.h"
 #import "HCDElements.h"
 #import "HCDVisitors.h"
+
 @implementation HCDObjectStructure
+
 -(instancetype)init{
     self = [super init];
     if (self) {
@@ -17,12 +19,15 @@
     }
     return self;
 }
+
 -(void)attach:(HCDElements *)element{
     [elements addObject:element];
 }
+
 -(void)detach:(HCDElements *)element{
     [elements removeObject:element];
 }
+
 -(void)accept:(HCDVisitors *)visitor{
     for (HCDElements *e in elements) {
         [e accept:visitor];

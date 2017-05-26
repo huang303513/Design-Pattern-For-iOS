@@ -8,11 +8,14 @@
 
 #import "HCDConcreteElementA.h"
 #import "HCDVisitors.h"
+
+
 @implementation HCDConcreteElementA
+
 -(void)operationA{
     return;
 }
 -(void)accept:(HCDVisitors *)visitor{
-    [visitor VisitConcreteElementA:self];
+    [visitor visitConcreteElementA:self];
 }
 @end

@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-@class HCDConcreteElementA,HCDConcreteElementB;
+#import "HCDConcreteElementA.h"
+#import "HCDConcreteElementB.h"
+
+
 @interface HCDVisitors : NSObject
--(void)VisitConcreteElementA:(HCDConcreteElementA *)concreteElementA;
--(void)VisitConcreteElementB:(HCDConcreteElementB *)concreteElementB;
+
+
+-(void)visitConcreteElementA:(HCDConcreteElementA *)concreteElementA;
+-(void)visitConcreteElementB:(HCDConcreteElementB *)concreteElementB;
 
 @end
