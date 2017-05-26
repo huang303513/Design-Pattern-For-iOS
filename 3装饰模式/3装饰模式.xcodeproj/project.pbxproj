@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D1868DA1ED6E27400F8C3C0 /* Component.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1868D91ED6E27400F8C3C0 /* Component.m */; };
+		4D1868DD1ED6E2B200F8C3C0 /* ConcreteComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1868DC1ED6E2B200F8C3C0 /* ConcreteComponent.m */; };
+		4D1868E01ED6E2D500F8C3C0 /* Decorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1868DF1ED6E2D500F8C3C0 /* Decorator.m */; };
+		4D1868E31ED6E30900F8C3C0 /* ConcreteDecoratorA.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1868E21ED6E30900F8C3C0 /* ConcreteDecoratorA.m */; };
+		4D1868E61ED6E31400F8C3C0 /* ConcreteDecoratorB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D1868E51ED6E31400F8C3C0 /* ConcreteDecoratorB.m */; };
 		DD17B1B01B7B058000943EDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1AF1B7B058000943EDE /* main.m */; };
 		DD17B1B31B7B058000943EDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1B21B7B058000943EDE /* AppDelegate.m */; };
 		DD17B1B61B7B058000943EDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1B51B7B058000943EDE /* ViewController.m */; };
@@ -14,11 +19,6 @@
 		DD17B1BB1B7B058000943EDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD17B1BA1B7B058000943EDE /* Images.xcassets */; };
 		DD17B1BE1B7B058000943EDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD17B1BC1B7B058000943EDE /* LaunchScreen.xib */; };
 		DD17B1CA1B7B058000943EDE /* _____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1C91B7B058000943EDE /* _____Tests.m */; };
-		DD17B1D61B7B0D5700943EDE /* HCDstractCellPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1D51B7B0D5700943EDE /* HCDstractCellPhone.m */; };
-		DD17B1D91B7B0DDE00943EDE /* HCDnokiaPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1D81B7B0DDE00943EDE /* HCDnokiaPhone.m */; };
-		DD17B1DC1B7B0E6000943EDE /* HCDdecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1DB1B7B0E6000943EDE /* HCDdecorator.m */; };
-		DD17B1DF1B7B0F6B00943EDE /* HCDdecoratorGPS.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1DE1B7B0F6B00943EDE /* HCDdecoratorGPS.m */; };
-		DD17B1E21B7B101C00943EDE /* HCDdecoratorBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17B1E11B7B101C00943EDE /* HCDdecoratorBluetooth.m */; };
 		DD17B1E41B7B11CE00943EDE /* 装饰模式图片.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DD17B1E31B7B11CE00943EDE /* 装饰模式图片.jpg */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +33,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D1868D81ED6E27400F8C3C0 /* Component.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Component.h; sourceTree = "<group>"; };
+		4D1868D91ED6E27400F8C3C0 /* Component.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Component.m; sourceTree = "<group>"; };
+		4D1868DB1ED6E2B200F8C3C0 /* ConcreteComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteComponent.h; sourceTree = "<group>"; };
+		4D1868DC1ED6E2B200F8C3C0 /* ConcreteComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteComponent.m; sourceTree = "<group>"; };
+		4D1868DE1ED6E2D500F8C3C0 /* Decorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decorator.h; sourceTree = "<group>"; };
+		4D1868DF1ED6E2D500F8C3C0 /* Decorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Decorator.m; sourceTree = "<group>"; };
+		4D1868E11ED6E30900F8C3C0 /* ConcreteDecoratorA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteDecoratorA.h; sourceTree = "<group>"; };
+		4D1868E21ED6E30900F8C3C0 /* ConcreteDecoratorA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteDecoratorA.m; sourceTree = "<group>"; };
+		4D1868E41ED6E31400F8C3C0 /* ConcreteDecoratorB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConcreteDecoratorB.h; sourceTree = "<group>"; };
+		4D1868E51ED6E31400F8C3C0 /* ConcreteDecoratorB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConcreteDecoratorB.m; sourceTree = "<group>"; };
 		DD17B1AA1B7B058000943EDE /* 3装饰模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "3装饰模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD17B1AE1B7B058000943EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD17B1AF1B7B058000943EDE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -46,16 +56,6 @@
 		DD17B1C31B7B058000943EDE /* 3装饰模式Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "3装饰模式Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD17B1C81B7B058000943EDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD17B1C91B7B058000943EDE /* _____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_____Tests.m"; sourceTree = "<group>"; };
-		DD17B1D41B7B0D5700943EDE /* HCDstractCellPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDstractCellPhone.h; sourceTree = "<group>"; };
-		DD17B1D51B7B0D5700943EDE /* HCDstractCellPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDstractCellPhone.m; sourceTree = "<group>"; };
-		DD17B1D71B7B0DDE00943EDE /* HCDnokiaPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDnokiaPhone.h; sourceTree = "<group>"; };
-		DD17B1D81B7B0DDE00943EDE /* HCDnokiaPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDnokiaPhone.m; sourceTree = "<group>"; };
-		DD17B1DA1B7B0E6000943EDE /* HCDdecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDdecorator.h; sourceTree = "<group>"; };
-		DD17B1DB1B7B0E6000943EDE /* HCDdecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDdecorator.m; sourceTree = "<group>"; };
-		DD17B1DD1B7B0F6B00943EDE /* HCDdecoratorGPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDdecoratorGPS.h; sourceTree = "<group>"; };
-		DD17B1DE1B7B0F6B00943EDE /* HCDdecoratorGPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDdecoratorGPS.m; sourceTree = "<group>"; };
-		DD17B1E01B7B101C00943EDE /* HCDdecoratorBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDdecoratorBluetooth.h; sourceTree = "<group>"; };
-		DD17B1E11B7B101C00943EDE /* HCDdecoratorBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDdecoratorBluetooth.m; sourceTree = "<group>"; };
 		DD17B1E31B7B11CE00943EDE /* 装饰模式图片.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "装饰模式图片.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,6 +77,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D1868D61ED6E22400F8C3C0 /* component */ = {
+			isa = PBXGroup;
+			children = (
+				4D1868D81ED6E27400F8C3C0 /* Component.h */,
+				4D1868D91ED6E27400F8C3C0 /* Component.m */,
+				4D1868DB1ED6E2B200F8C3C0 /* ConcreteComponent.h */,
+				4D1868DC1ED6E2B200F8C3C0 /* ConcreteComponent.m */,
+			);
+			name = component;
+			sourceTree = "<group>";
+		};
+		4D1868D71ED6E23000F8C3C0 /* decorator */ = {
+			isa = PBXGroup;
+			children = (
+				4D1868DE1ED6E2D500F8C3C0 /* Decorator.h */,
+				4D1868DF1ED6E2D500F8C3C0 /* Decorator.m */,
+				4D1868E11ED6E30900F8C3C0 /* ConcreteDecoratorA.h */,
+				4D1868E21ED6E30900F8C3C0 /* ConcreteDecoratorA.m */,
+				4D1868E41ED6E31400F8C3C0 /* ConcreteDecoratorB.h */,
+				4D1868E51ED6E31400F8C3C0 /* ConcreteDecoratorB.m */,
+			);
+			name = decorator;
+			sourceTree = "<group>";
+		};
 		DD17B1A11B7B058000943EDE = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +122,7 @@
 		DD17B1AC1B7B058000943EDE /* 3装饰模式 */ = {
 			isa = PBXGroup;
 			children = (
-				DD17B1D31B7B058800943EDE /* decorate */,
+				DD17B1D31B7B058800943EDE /* 装饰模式 */,
 				DD17B1B11B7B058000943EDE /* AppDelegate.h */,
 				DD17B1B21B7B058000943EDE /* AppDelegate.m */,
 				DD17B1B41B7B058000943EDE /* ViewController.h */,
@@ -137,22 +161,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DD17B1D31B7B058800943EDE /* decorate */ = {
+		DD17B1D31B7B058800943EDE /* 装饰模式 */ = {
 			isa = PBXGroup;
 			children = (
+				4D1868D71ED6E23000F8C3C0 /* decorator */,
+				4D1868D61ED6E22400F8C3C0 /* component */,
 				DD17B1E31B7B11CE00943EDE /* 装饰模式图片.jpg */,
-				DD17B1D41B7B0D5700943EDE /* HCDstractCellPhone.h */,
-				DD17B1D51B7B0D5700943EDE /* HCDstractCellPhone.m */,
-				DD17B1D71B7B0DDE00943EDE /* HCDnokiaPhone.h */,
-				DD17B1D81B7B0DDE00943EDE /* HCDnokiaPhone.m */,
-				DD17B1DA1B7B0E6000943EDE /* HCDdecorator.h */,
-				DD17B1DB1B7B0E6000943EDE /* HCDdecorator.m */,
-				DD17B1DD1B7B0F6B00943EDE /* HCDdecoratorGPS.h */,
-				DD17B1DE1B7B0F6B00943EDE /* HCDdecoratorGPS.m */,
-				DD17B1E01B7B101C00943EDE /* HCDdecoratorBluetooth.h */,
-				DD17B1E11B7B101C00943EDE /* HCDdecoratorBluetooth.m */,
 			);
-			name = decorate;
+			name = "装饰模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,14 +272,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD17B1D91B7B0DDE00943EDE /* HCDnokiaPhone.m in Sources */,
 				DD17B1B61B7B058000943EDE /* ViewController.m in Sources */,
-				DD17B1E21B7B101C00943EDE /* HCDdecoratorBluetooth.m in Sources */,
-				DD17B1DF1B7B0F6B00943EDE /* HCDdecoratorGPS.m in Sources */,
-				DD17B1D61B7B0D5700943EDE /* HCDstractCellPhone.m in Sources */,
+				4D1868DA1ED6E27400F8C3C0 /* Component.m in Sources */,
 				DD17B1B31B7B058000943EDE /* AppDelegate.m in Sources */,
+				4D1868E31ED6E30900F8C3C0 /* ConcreteDecoratorA.m in Sources */,
+				4D1868DD1ED6E2B200F8C3C0 /* ConcreteComponent.m in Sources */,
 				DD17B1B01B7B058000943EDE /* main.m in Sources */,
-				DD17B1DC1B7B0E6000943EDE /* HCDdecorator.m in Sources */,
+				4D1868E01ED6E2D500F8C3C0 /* Decorator.m in Sources */,
+				4D1868E61ED6E31400F8C3C0 /* ConcreteDecoratorB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +474,7 @@
 				DD17B1CF1B7B058000943EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD17B1D01B7B058000943EDE /* Build configuration list for PBXNativeTarget "3装饰模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +483,7 @@
 				DD17B1D21B7B058000943EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "HCDstractCellPhone.h"
-#import "HCDnokiaPhone.h"
-#import "HCDdecoratorGPS.h"
-#import "HCDdecoratorBluetooth.h"
+#import "ConcreteDecoratorA.h"
+#import "ConcreteDecoratorB.h"
+#import "ConcreteComponent.h"
+
 @interface ViewController ()
 
 @end
@@ -19,35 +19,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //原始对象
+    ConcreteComponent *component = [[ConcreteComponent alloc]init];
+    //装饰对象
+    ConcreteDecoratorA *decoratorA = [[ConcreteDecoratorA alloc]init];
+    ConcreteDecoratorB *decoratorB = [[ConcreteDecoratorB alloc]init];
     
-    /*
-     说明：
-     HCDstractCellPhone对应图片中的Component
-     HCDnokiaPhone对应图片中的ConcreteComponent
-     HCDdecorator对应图片中的Decorator
-     HCDdecoratorGPS对应图片中的ConcreteDecoratorA
-     HCDdecoratorBluetooth对应图片中的ConcreteDecoratorB
-     */
-    //核心思想就是通过HCDdecorator各种子类来为HCDnokiaPhone添加各种功能。而不需要改变HCDnokiaPhone。
-    //参考地址:http://www.tuicool.com/articles/jyeU3mu
-    HCDstractCellPhone *phone = [[HCDnokiaPhone alloc]init];
-    NSLog(@"%@",phone.callNumber);
-    NSLog(@"%@",phone.sendMessage);
+    //装饰对象指定原始对象，后面就是用装饰对象。这样既有原始对象的功能，也有装饰对象的功能。
+    decoratorA.component = component;
+    decoratorB.component = component;
     
-    HCDdecoratorGPS *GPS = [[HCDdecoratorGPS alloc]init];
-    [GPS setComponents:phone];
-    NSLog(@"%@",GPS.callNumber);
-    NSLog(@"%@",GPS.sendMessage);
+    [decoratorA operation];
+    [decoratorB operation];
     
-    HCDdecoratorBluetooth *bluetooth = [[HCDdecoratorBluetooth alloc] init];
-    [bluetooth setComponents:phone];
-    NSLog(@"%@",bluetooth.callNumber);
-    NSLog(@"%@",bluetooth.sendMessage);
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
