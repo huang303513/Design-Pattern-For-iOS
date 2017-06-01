@@ -203,7 +203,24 @@ HCDStateManager *manager = [[HCDStateManager alloc]initWithGameState:state];
 ![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E7%BB%84%E5%90%88%E6%A8%A1%E5%BC%8F.png)</br>
 
 ````objc
+//当需求中体现部分与整体层次的结构时，以及你希望用户可以忽略组合对象与单个对象的不同，统一地使用组合结构中的所有对象，接应该考虑使用组合模式了。
+HCDConcreteCompany *root = [[HCDConcreteCompany alloc]initWithName:@"总公司"];
+[root add:[[HCDHRDepartment alloc]initWithName:@"总公司人力资源部"]];
+[root add:[[HCDFinanceDepartment alloc]initWithName:@"总公司财务部"]];
 
+HCDConcreteCompany *comp = [[HCDConcreteCompany alloc]initWithName:@"上海华东分公司"];
+[comp add:[[HCDHRDepartment alloc]initWithName:@"上海华东分公司人力资源部"]];
+[comp add:[[HCDFinanceDepartment alloc]initWithName:@"上海华东分公司财务部"]];
+[root add:comp];
+
+HCDConcreteCompany *comp1 = [[HCDConcreteCompany alloc]initWithName:@"杭州办事处"];
+[comp1 add:[[HCDHRDepartment alloc]initWithName:@"杭州办事处人力资源部"]];
+[comp1 add:[[HCDFinanceDepartment alloc]initWithName:@"杭州办事处财务部"]];
+[root add:comp1];
+NSLog(@"结构图:----------------------------");
+[root display];
+NSLog(@"职责:---------------------------");
+[root lineofDuty];
 ````
 
 ### 迭代器模式（Iterator）
@@ -239,7 +256,25 @@ iOS的UIApplicationDelegate就是一个单列模式的实现。
 ![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F.png)</br>
 
 ````objc
-
+//waiter用于接收各种类型的order。waiter是请求接收者。
+//接收不同customer产生的不同order，并且都存入waiter这个接受者中,type表示不同类型的order。
+HCDWaiter *waiter = [[HCDWaiter alloc]init];
+//顾客一
+HCDCustomr *customer = [[HCDCustomr alloc]init];
+HCDOrder *customerOrder1 = [customer pushOrderWithString:@"顾客一要十串羊肉" type:orderTypeMutton];
+ HCDOrder *customerOrder2 = [customer pushOrderWithString:@"顾客一要十串鸭肉" type:orderTypeDuck];
+[waiter addOrder:customerOrder1];
+[waiter addOrder:customerOrder2];
+//顾客二
+HCDCustomr *customer1 = [[HCDCustomr alloc]init];
+HCDOrder *customer1Order1 = [customer1 pushOrderWithString:@"顾客二要二十串鸡肉" type:orderTypeChicken];
+    HCDOrder *customer1Order2 = [customer1 pushOrderWithString:@"顾客二要二十串鸭肉" type:orderTypeDuck];
+[waiter addOrder:customer1Order1];
+[waiter addOrder:customer1Order2];
+//顾客取消Order
+[waiter deleteOrder:customer1Order2];
+//waiter发送order，背后有一个HCDWorker这个单列作为行为实现者来处理具体的order。命令接收完毕，开始发送命令。
+[waiter notifyOrder];
 ````
     
 ### 职责链模式（Chain of Responsibility）
@@ -277,7 +312,24 @@ mediator.colleague2 = c2;
 ![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E4%BA%AB%E5%85%83%E6%A8%A1%E5%BC%8F.png)</br>
 
 ````objc
+比如iOS的RunTime就是享元的一个事件。每个对象调用的方法其实是他对应的类里面实现的。比如NSObject定义了很多方法让所有对象都可以使用。类对象永远只有一个，而对应的实例对象有无数个。
 
+//享元工厂，里面包括多个共享的对象。
+HCDWebSiteFactory *facoty = [[HCDWebSiteFactory alloc]init];
+//虽然生成了两个fx和fy产品展示类型的对象，但是通过共享只初始化了一个产品展示的对象。
+HCDWebSiteType fx = [facoty getWebSiteCategory:@"产品展示"];
+HCDUser *user = [[HCDUser alloc]init];
+user.name = @"小菜";
+[fx use:user];
+HCDWebSiteType fy = [facoty getWebSiteCategory:@"产品展示"];
+HCDUser *user1 = [[HCDUser alloc]init];
+user1.name = @"大鸟";
+[fy use:user1];
+//初始化一个博客类型的对象。以后使用都可以共享使用，因为他们有基本相似的功能。
+HCDWebSiteType fz = [facoty getWebSiteCategory:@"博客"];
+HCDUser *user2 = [[HCDUser alloc]init];
+user2.name = @"咪咪";
+[fz use:user2];
 ````
     
 ### 解释器模式（Interpreter）
@@ -286,7 +338,21 @@ mediator.colleague2 = c2;
 ![img](https://github.com/huang303513/Design-Pattern-For-iOS/blob/master/%E8%AE%BE%E8%AE%A1%E5%9B%BE/%E8%A7%A3%E9%87%8A%E5%99%A8%E6%A8%A1%E5%BC%8F.png)</br>
 
 ````objc
+比如JavaScript中，判断邮件地址、电话号码、证件号码是否正确的正则表达式，每一个表达式就是一个解释器。
+又比如外交部的发言。就需要解释器来解释特定的内容。达成共识(扯淡了半天),充分表达了立场(撕逼了半天),我不了解相关情况(我不想回答你的问题)。
 
+//用于存放一些全局配置信息
+HCDContext *context = [[HCDContext alloc]initWithInput:@"12345"];
+NSMutableArray *list = [[NSMutableArray alloc]init];
+//不同的解释器
+[list addObject:[[HCDTerminalExpression alloc]init]];
+[list addObject:[[HCDNonterminalExpression alloc]init]];
+[list addObject:[[HCDTerminalExpression alloc]init]];
+[list addObject:[[HCDTerminalExpression alloc]init]];
+//获得不同解释器的解释结果
+for(HCDAbstractExpression *exp in list) {
+    [exp interpret:context];
+}
 ````
     
 ### 访问者模式（Visitor）
