@@ -9,14 +9,24 @@
 #import "HCDCustomr.h"
 #import "HCDMuttonOrder.h"
 #import "HCDChickenOrder.h"
+#import "HCDDuckOrder.h"
+
+
+
 @implementation HCDCustomr
 
--(HCDOrder *)pushOrderWithString:(NSString *)string type:(BOOL)type{
+-(HCDOrder *)pushOrderWithString:(NSString *)string type:(orderType)type{
     HCDOrder *order = nil;
-    if (type) {
-       order = [[HCDMuttonOrder alloc]initWithOrderString:string];
-    }else{
-       order = [[HCDChickenOrder alloc]initWithOrderString:string];
+    switch (type) {
+        case orderTypeMutton:
+            order = [[HCDMuttonOrder alloc]initWithOrderString:string];
+            break;
+        case orderTypeChicken:
+            order = [[HCDChickenOrder alloc]initWithOrderString:string];
+            break;
+        case orderTypeDuck:
+            order = [[HCDDuckOrder alloc]initWithOrderString:string];
+            break;
     }
     return order;
 }

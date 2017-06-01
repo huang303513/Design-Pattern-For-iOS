@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+
 @class HCDOrder,HCDMuttonOrder,HCDChickenOrder;
+
+typedef NS_ENUM(NSUInteger,orderType){
+    orderTypeMutton,
+    orderTypeChicken,
+    orderTypeDuck
+};
+
 @interface HCDCustomr : NSObject
--(HCDOrder *)pushOrderWithString:(NSString *)string type:(BOOL)type;
+
+-(HCDOrder *)pushOrderWithString:(NSString *)string type:(orderType)type;
 @end

@@ -9,7 +9,9 @@
 #import "HCDChickenOrder.h"
 
 @implementation HCDChickenOrder
+
 -(void)executeOrder{
+    NSLog(@"烤鸡");
     [[HCDWorker sharedWorker] doChickenWork:self.orderString];
 }
 @end

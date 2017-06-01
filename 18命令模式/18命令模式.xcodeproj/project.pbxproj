@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D18692E1EDFF75C00F8C3C0 /* HCDDuckOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D18692D1EDFF75C00F8C3C0 /* HCDDuckOrder.m */; };
 		DD2D68E81B7F0E5500F9E848 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68E71B7F0E5500F9E848 /* main.m */; };
 		DD2D68EB1B7F0E5500F9E848 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68EA1B7F0E5500F9E848 /* AppDelegate.m */; };
 		DD2D68EE1B7F0E5500F9E848 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2D68ED1B7F0E5500F9E848 /* ViewController.m */; };
@@ -33,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D18692C1EDFF75C00F8C3C0 /* HCDDuckOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDDuckOrder.h; sourceTree = "<group>"; };
+		4D18692D1EDFF75C00F8C3C0 /* HCDDuckOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDDuckOrder.m; sourceTree = "<group>"; };
 		DD2D68E21B7F0E5500F9E848 /* 18命令模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "18命令模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2D68E61B7F0E5500F9E848 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD2D68E71B7F0E5500F9E848 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -147,6 +150,8 @@
 				DD2D69101B7F111000F9E848 /* HCDMuttonOrder.m */,
 				DD2D69121B7F112600F9E848 /* HCDChickenOrder.h */,
 				DD2D69131B7F112600F9E848 /* HCDChickenOrder.m */,
+				4D18692C1EDFF75C00F8C3C0 /* HCDDuckOrder.h */,
+				4D18692D1EDFF75C00F8C3C0 /* HCDDuckOrder.m */,
 				DD2D69151B7F118100F9E848 /* HCDWorker.h */,
 				DD2D69161B7F118100F9E848 /* HCDWorker.m */,
 				DD2D69181B7F131E00F9E848 /* HCDWaiter.h */,
@@ -266,6 +271,7 @@
 				DD2D68EE1B7F0E5500F9E848 /* ViewController.m in Sources */,
 				DD2D68EB1B7F0E5500F9E848 /* AppDelegate.m in Sources */,
 				DD2D68E81B7F0E5500F9E848 /* main.m in Sources */,
+				4D18692E1EDFF75C00F8C3C0 /* HCDDuckOrder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +466,7 @@
 				DD2D69071B7F0E5500F9E848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD2D69081B7F0E5500F9E848 /* Build configuration list for PBXNativeTarget "18命令模式Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				DD2D690A1B7F0E5500F9E848 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

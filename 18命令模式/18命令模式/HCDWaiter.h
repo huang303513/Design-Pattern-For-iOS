@@ -10,7 +10,9 @@
 #import "HCDOrder.h"
 #import "HCDMuttonOrder.h"
 #import "HCDChickenOrder.h"
+
 @interface HCDWaiter : NSObject
+
 -(void)addOrder:(HCDOrder *)order;
 -(void)deleteOrder:(HCDOrder *)order;
 -(void)notifyOrder;

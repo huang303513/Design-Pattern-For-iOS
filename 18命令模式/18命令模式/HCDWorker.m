@@ -9,6 +9,7 @@
 #import "HCDWorker.h"
 
 @implementation HCDWorker
+
 +(instancetype)sharedWorker{
     static dispatch_once_t once;
     static HCDWorker *sharedWorker = nil;
@@ -24,4 +25,9 @@
 -(void)doChickenWork:(NSString *)work{
     NSLog(@"厨师考鸡肉:%@",work);
 }
+
+-(void)doDuckWork:(NSString *)work{
+    NSLog(@"厨师烤鸭肉:%@",work);
+}
+
 @end

@@ -9,7 +9,9 @@
 #import "HCDMuttonOrder.h"
 
 @implementation HCDMuttonOrder
+
 -(void)executeOrder{
+    NSLog(@"烤羊");
     [[HCDWorker sharedWorker] doMuttonWork:self.orderString];
 }
 @end

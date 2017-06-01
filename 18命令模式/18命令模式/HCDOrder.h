@@ -9,8 +9,12 @@
 #import <Foundation/Foundation.h>
 #import "HCDOrder.h"
 #import "HCDWorker.h"
+
 @interface HCDOrder : NSObject
+
 @property(nonatomic,copy)NSString *orderString;
--(instancetype)initWithOrderString:(NSString *)orderString;;
+
+-(instancetype)initWithOrderString:(NSString *)orderString;
+//执行命令
 -(void)executeOrder;
 @end
