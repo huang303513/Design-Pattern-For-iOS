@@ -9,7 +9,7 @@
 #import "HCDPersonBuilderDirector.h"
 #import "HCDPersonFatBuilder.h"
 #import "HCDPersonThinBuilder.h"
-
+#import "HCDPerson.h"
 
 @interface HCDPersonBuilderDirector ()
 
@@ -18,9 +18,18 @@
 @implementation HCDPersonBuilderDirector
 
 
--(void)buildPerson{
-    NSLog(@"===============director指挥builder开始建造====================");
-    [self.builder buildPerson];
+- (HCDPerson *)buildPerson:(HCDPresonBuilder *)builder {
+    
+    NSLog(@"===============director指挥建造过程====================");
+    
+    [builder buildHead];
+    [builder buildBody];
+    [builder buildArmLeft];
+    [builder buildArmRight];
+    [builder buildLegLeft];
+    [builder buildLegRight];
+    
+    return [builder buildPerson];
 }
 
 @end

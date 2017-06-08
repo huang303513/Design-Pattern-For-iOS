@@ -32,42 +32,39 @@
     return self;
 }
 
--(void)buildPerson{
-    [self buildHead];
-    [self buildBody];
-    [self buildArmLeft];
-    [self buildArmRight];
-    [self buildLegLeft];
-    [self buildLegRight];
-}
-
 - (void)buildHead {
     NSLog(@"建造胖子的头部");
     [self.header work];
+    self->person.header = @"胖子的头部";
 }
 
 - (void)buildBody {
     NSLog(@"建造胖子的身体");
     [self.body work];
+    self->person.body = @"胖子的身体";
 }
 
 - (void)buildArmLeft {
     NSLog(@"建造胖子的左手");
     [self.arm work];
+    self->person.leftArm = @"胖子的左手";
 }
 
 - (void)buildArmRight {
     NSLog(@"建造胖子的右手");
     [self.arm work];
+    self->person.rightArm = @"胖子的右手";
 }
 
 - (void)buildLegLeft {
     NSLog(@"建造胖子的左脚");
     [self.leg work];
+    self->person.leftLeg = @"胖子的左脚";
 }
 
 - (void)buildLegRight {
     NSLog(@"建造胖子的右脚");
     [self.leg work];
+    self->person.rightLeg = @"胖子的右脚";
 }
 @end

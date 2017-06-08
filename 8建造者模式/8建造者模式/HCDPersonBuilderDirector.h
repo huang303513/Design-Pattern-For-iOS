@@ -7,13 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HCDPresionBuilder.h"
+#import "HCDPresonBuilder.h"
+
+@class HCDPerson;
 
 @interface HCDPersonBuilderDirector : NSObject
 
-
-@property(nonatomic, strong)HCDPresionBuilder builder;
-
--(void)buildPerson;
+- (HCDPerson *)buildPerson:(HCDPresonBuilder *)builder;
 
 @end

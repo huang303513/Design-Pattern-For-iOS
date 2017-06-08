@@ -10,6 +10,10 @@
 #import "HCDReuquest.h"
 @implementation HCDMnager
 -(instancetype)initWithName:(NSString *)name{
+    if ([self isMemberOfClass:[HCDMnager class]]) {
+        NSAssert(NO, @"基类不能被直接初始化。");
+    }
+    
     self = [super init];
     if (self) {
         _name = name;
