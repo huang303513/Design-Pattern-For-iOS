@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007B61981EE8E5D900AE878A /* HCDPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B61971EE8E5D900AE878A /* HCDPerson.m */; };
+		007B619B1EE8EA5400AE878A /* HCDPresonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B619A1EE8EA5400AE878A /* HCDPresonBuilder.m */; };
 		4DC94D991ECC6A8500A8DB96 /* HCDHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC94D981ECC6A8500A8DB96 /* HCDHeader.m */; };
 		4DC94D9C1ECC6A9700A8DB96 /* HCDBody.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC94D9B1ECC6A9700A8DB96 /* HCDBody.m */; };
 		4DC94D9F1ECC6AA600A8DB96 /* HCDLeg.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC94D9E1ECC6AA600A8DB96 /* HCDLeg.m */; };
@@ -34,6 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		007B61961EE8E5D900AE878A /* HCDPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDPerson.h; sourceTree = "<group>"; };
+		007B61971EE8E5D900AE878A /* HCDPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDPerson.m; sourceTree = "<group>"; };
+		007B61991EE8EA5400AE878A /* HCDPresonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDPresonBuilder.h; sourceTree = "<group>"; };
+		007B619A1EE8EA5400AE878A /* HCDPresonBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDPresonBuilder.m; sourceTree = "<group>"; };
 		4DC94D971ECC6A8500A8DB96 /* HCDHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDHeader.h; sourceTree = "<group>"; };
 		4DC94D981ECC6A8500A8DB96 /* HCDHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HCDHeader.m; sourceTree = "<group>"; };
 		4DC94D9A1ECC6A9700A8DB96 /* HCDBody.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HCDBody.h; sourceTree = "<group>"; };
@@ -82,6 +88,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		007B61951EE8E5B800AE878A /* 产品 */ = {
+			isa = PBXGroup;
+			children = (
+				007B61961EE8E5D900AE878A /* HCDPerson.h */,
+				007B61971EE8E5D900AE878A /* HCDPerson.m */,
+			);
+			name = "产品";
+			sourceTree = "<group>";
+		};
 		4DC94D961ECC6A5E00A8DB96 /* 工具类 */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +124,8 @@
 		4DC94DA41ECC6D2600A8DB96 /* Builder */ = {
 			isa = PBXGroup;
 			children = (
+				007B61991EE8EA5400AE878A /* HCDPresonBuilder.h */,
+				007B619A1EE8EA5400AE878A /* HCDPresonBuilder.m */,
 				DD4F86DB1B7C48ED00A32343 /* HCDPresionBuilder.h */,
 				DD4F86DC1B7C497400A32343 /* HCDPersonThinBuilder.h */,
 				DD4F86DD1B7C497400A32343 /* HCDPersonThinBuilder.m */,
@@ -181,6 +198,7 @@
 		DD4F86DA1B7C48C000A32343 /* 建造者模式 */ = {
 			isa = PBXGroup;
 			children = (
+				007B61951EE8E5B800AE878A /* 产品 */,
 				4DC94DA41ECC6D2600A8DB96 /* Builder */,
 				4DC94DA31ECC6D1E00A8DB96 /* Director */,
 				4DC94D961ECC6A5E00A8DB96 /* 工具类 */,
@@ -293,6 +311,8 @@
 				4DC94DA21ECC6ACA00A8DB96 /* HCDArm.m in Sources */,
 				4DC94D9C1ECC6A9700A8DB96 /* HCDBody.m in Sources */,
 				4DC94D991ECC6A8500A8DB96 /* HCDHeader.m in Sources */,
+				007B61981EE8E5D900AE878A /* HCDPerson.m in Sources */,
+				007B619B1EE8EA5400AE878A /* HCDPresonBuilder.m in Sources */,
 				DD4F86BD1B7C38C600A32343 /* ViewController.m in Sources */,
 				DD4F86DE1B7C497400A32343 /* HCDPersonThinBuilder.m in Sources */,
 				DD4F86BA1B7C38C600A32343 /* AppDelegate.m in Sources */,

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "HCDPresionBuilder.h"
+#import "HCDPresonBuilder.h"
 
-@interface HCDPersonFatBuilder : NSObject<HCDPresionBuilder>
+@interface HCDPersonFatBuilder : HCDPresonBuilder
 
 @end
